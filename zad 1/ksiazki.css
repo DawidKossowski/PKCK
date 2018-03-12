@@ -1,0 +1,98 @@
+/* Tworzenie tabelki */
+
+książki {
+    display: table;
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 40px 0;
+}
+
+książki książka {
+    display: table-row;
+}
+
+
+książki książka > * {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+książki książka:nth-child(2n) {
+    background-color: #eee;
+}
+
+książki książka > autorzy > autor:not(:first-child) {
+    display: block;
+    padding-top: 5px;
+}
+
+książki książka > autorzy[pracaZbiorowa="true"]::before {
+    content: "Praca zbiorowa";
+}
+
+książki książka > dział::after {
+    content: attr(id);
+}
+
+książki książka > cena::after {
+    display: inline-block;
+    width: 50px;
+    content: " " attr(waluta);
+}
+
+książki książka[dostępna="false"] > tytuł::before {
+    display: inline-block;
+    float: left;
+    color: orangered;
+    content: "BRAK";
+}
+
+książki książka[dostępna="false"] {
+    color: #999;
+    font-style: italic;
+}
+
+
+/* Tworzenie naglowka tabelki */
+
+książki książka:first-child > *::before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: -80%;
+    left: 0;
+    padding-top: 0.8em;
+    transform: translateY(-0.8em);
+    vertical-align: middle;
+    background-color: lightskyblue;
+}
+
+książki książka:first-child > tytuł::before {
+    content: "Tytuł";
+}
+
+książki książka:first-child > autorzy::before {
+    content: "Autorzy";
+}
+
+książki książka:first-child > język::before {
+    content: "Język";
+}
+
+książki książka:first-child > dział::before {
+    content: "Dział";
+}
+
+książki książka:first-child > rok-wydania::before {
+    content: "Wydanie";
+}
+
+książki książka:first-child > cena::before {
+    content: "Cena";
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema	xmlns="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://definicje-dzialow.example.com"
+           xmlns:dd="http://definicje-dzialow.example.com">
+
+    <element name="lista-działów">
+        <complexType>
+            <sequence>
+                <element ref="dd:definicja-działu" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="definicja-działu" type="dd:daneDziału"/>
+
+    <complexType name="daneDziału">
+        <attributeGroup ref="dd:atrybutyDziału"/>
+    </complexType>
+
+    <attributeGroup name="atrybutyDziału">
+        <attribute name="idDziału">
+            <simpleType>
+                <restriction base="ID">
+                    <pattern value="D{1}[0-9]{1,2}"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+        <attribute name="nazwaDziału" type="string"/>
+    </attributeGroup>
+</schema>

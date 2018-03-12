@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ENTITY % waluty "(PLN|USD|EUR)">
+<!ENTITY % języki "Polski|Angielski|Niemiecki">
+<!ELEMENT księgarnia (twórcy,książki,lista-działów)>
+<!ELEMENT twórcy (twórca+)>
+<!ELEMENT twórca (imię,nazwisko,semestr,indeks,kontakt)>
+<!ATTLIST twórca idTwórcy ID #REQUIRED>
+<!ELEMENT imię (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT semestr (#PCDATA)>
+<!ELEMENT indeks (#PCDATA)>
+<!ELEMENT kontakt (email+,telefon*)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+
+<!ELEMENT książki (książka+)>
+<!ELEMENT książka (tytuł,autorzy,język,dział,rok-wydania,cena)>
+<!ATTLIST książka
+        idKsiążki ID #REQUIRED
+        dostępna (true|false) "true">
+<!ELEMENT tytuł (#PCDATA)>
+<!ELEMENT autorzy (autor*)>
+<!ATTLIST autorzy pracaZbiorowa (true|false) "false">
+<!ELEMENT autor (imię,nazwisko)>
+<!ELEMENT język %języki;>
+<!ELEMENT dział EMPTY>
+<!ATTLIST dział id IDREF #REQUIRED>
+<!ELEMENT rok-wydania (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ATTLIST cena waluta %waluty; #REQUIRED>
+
+<!ELEMENT lista-działów (definicja-działu+)>
+<!ELEMENT definicja-działu EMPTY>
+<!ATTLIST definicja-działu
+        idDziału ID #REQUIRED
+        nazwaDziału NMTOKEN #REQUIRED>

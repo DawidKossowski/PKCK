@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:tworca="http://tworca.example.com"
+              xmlns:dzialy="http://definicje-dzialow.example.com">
+
+    <xs:import	namespace="http://tworca.example.com"
+                  schemaLocation="tworca.xsd"/>
+    <xs:import	namespace="http://definicje-dzialow.example.com"
+                  schemaLocation="definicje_dzialow.xsd"/>
+
+    <xs:element name="księgarnia" type="szkieletKsięgarni">
+        <xs:key name="książka_klucz">
+            <xs:selector xpath="książki/książka"/>
+            <xs:field xpath="@idKsiążki"/>
+        </xs:key>
+
+        <xs:key name="twórca_klucz">
+            <xs:selector xpath="twórcy/twórca"/>
+            <xs:field xpath="@idTwórcy"/>
+        </xs:key>
+
+        <xs:key name="działy_klucz">
+            <xs:selector xpath="dzialy:lista-działów/dzialy:definicja-działu"/>
+            <xs:field xpath="@idDziału"/>
+        </xs:key>
+
+        <xs:keyref name="weryfikujDziału" refer="działy_klucz">
+            <xs:selector xpath="książki/książka/dział"/>
+            <xs:field xpath="@id"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="szkieletKsięgarni">
+        <xs:sequence>
+            <xs:element ref="tworca:twórcy"/>
+            <xs:element ref="książki"/>
+            <xs:element ref="dzialy:lista-działów"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:element name="książki">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="książka" type="daneKsiążki" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="daneKsiążki">
+        <xs:group ref="elementyKsiążki"/>
+        <xs:attributeGroup ref="atrybutyKsiążki"/>
+    </xs:complexType>
+
+    <xs:group name="elementyKsiążki">
+        <xs:sequence>
+            <xs:element ref="tytuł"/>
+            <xs:element ref="autorzy"/>
+            <xs:element ref="język"/>
+            <xs:element ref="dział"/>
+            <xs:element ref="rok-wydania"/>
+            <xs:element ref="cena"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:attributeGroup name="atrybutyKsiążki">
+        <xs:attribute name="idKsiążki" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:pattern value="K{1}[0-9]{1,2}"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="dostępna" type="xs:boolean" default="true"/>
+    </xs:attributeGroup>
+
+    <xs:element name="tytuł" type="xs:string"/>
+
+    <xs:element name="autorzy">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="autor" type="daneAutora" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="pracaZbiorowa" type="xs:boolean" default="false"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="daneAutora">
+        <xs:complexContent>
+            <xs:extension base="tworca:osoba"/>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="język">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Polski"/>
+                <xs:enumeration value="Angielski"/>
+                <xs:enumeration value="Niemiecki"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="dział">
+        <xs:complexType>
+            <xs:attribute name="id" type="xs:IDREF"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="rok-wydania">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minExclusive value="1900"/>
+                <xs:maxExclusive value="2019"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="cena">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:float">
+                    <xs:attribute name="waluta" type="rodzajeWalut"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="rodzajeWalut">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PLN"/>
+            <xs:enumeration value="USD"/>
+            <xs:enumeration value="EUR"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

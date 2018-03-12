@@ -1,0 +1,22 @@
+lista-działów::before {
+    display: block;
+    margin-bottom: 10px;
+    content: "Poniżej znajduje się definicja działów: ";
+}
+
+lista-działów > definicja-działu {
+    display: block;
+    padding: 5px 0;
+}
+
+lista-działów > definicja-działu::before {
+    display: inline-block;
+    min-width: 60px;
+    content: attr(idDziału) " - ";
+    font-weight: bold;
+}
+
+lista-działów > definicja-działu::after {
+    display: inline-block;
+    content: attr(nazwaDziału);
+}
