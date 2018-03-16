@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!ENTITY % waluty "(PLN|USD|EUR)">
-<!ENTITY % języki "Polski|Angielski|Niemiecki">
 <!ELEMENT księgarnia (twórcy,książki,lista-działów)>
 <!ELEMENT twórcy (twórca+)>
 <!ELEMENT twórca (imię,nazwisko,semestr,indeks,kontakt)>
@@ -22,7 +21,7 @@
 <!ELEMENT autorzy (autor*)>
 <!ATTLIST autorzy pracaZbiorowa (true|false) "false">
 <!ELEMENT autor (imię,nazwisko)>
-<!ELEMENT język %języki;>
+<!ELEMENT język (#PCDATA)>
 <!ELEMENT dział EMPTY>
 <!ATTLIST dział id IDREF #REQUIRED>
 <!ELEMENT rok-wydania (#PCDATA)>
