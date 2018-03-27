@@ -128,6 +128,9 @@
             <wszystkie>
                 <xsl:value-of select="count(//książka)"/>
             </wszystkie>
+            <bieżacy-rok>
+                <xsl:value-of select="count(//książka[rok-wydania='2018'])"/>
+            </bieżacy-rok>
             <język>
                 <polski>
                     <xsl:value-of select="count(//książka[język='Polski'])"/>

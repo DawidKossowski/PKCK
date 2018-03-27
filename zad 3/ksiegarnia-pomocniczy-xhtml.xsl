@@ -157,6 +157,13 @@
                 <xsl:value-of select="ilość-książek/wszystkie"/>
             </span>
         </p>
+
+        <p>
+            <span>Liczba książek z bieżącego roku: </span>
+            <span style="color: red;">
+                <xsl:value-of select="ilość-książek/bieżacy-rok"/>
+            </span>
+        </p>
         <table>
             <caption>Liczby książek w poszczególnych językach</caption>
             <thead>
