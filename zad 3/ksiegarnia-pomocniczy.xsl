@@ -83,7 +83,9 @@
             <xsl:value-of select="@id" />
         </xsl:variable>
 
-        <xsl:apply-templates select="/księgarnia/lista-działów/definicja-działu[@idDziału = $id]" />
+        <dział>
+            <xsl:value-of select="/księgarnia/lista-działów/definicja-działu[@idDziału = $id]/@nazwaDziału" />
+        </dział>
     </xsl:template>
 
     <xsl:template name="policz_cene">
@@ -109,14 +111,14 @@
     <xsl:template match="/księgarnia/lista-działów">
         <działy>
             <xsl:for-each select="definicja-działu">
-                <dział>
+                <definicja-działu>
                     <id>
                         <xsl:value-of select="@idDziału"/>
                     </id>
                     <nazwa>
                         <xsl:value-of select="@nazwaDziału"/>
                     </nazwa>
-                </dział>
+                </definicja-działu>
             </xsl:for-each>
         </działy>
     </xsl:template>

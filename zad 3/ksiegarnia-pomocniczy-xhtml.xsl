@@ -20,6 +20,10 @@
                     font-family: sans-serif, monospace;
                     overflow-x: hidden;
                     }
+
+                    th:first-letter {
+                    text-transform: uppercase;
+                    }
                 </style>
             </head>
             <body>
@@ -64,28 +68,38 @@
 
     <xsl:template match="/księgarnia/książki">
         <h3 id="{generate-id(.)}">Lista książek</h3>
+        <p>Wszystkie ceny wyrażone są w PLN.</p>
         <table>
             <thead>
                 <tr>
-                    <th>Tytuł</th>
-                    <th>Autorzy</th>
-                    <th>Język</th>
-                    <th>Dział</th>
-                    <th>Rok</th>
-                    <th>Cena[PLN]</th>
+                    <xsl:for-each select="książka[1]/*">
+                        <th>
+                            <xsl:value-of select="name(.)" />
+                        </th>
+                    </xsl:for-each>
                 </tr>
             </thead>
             <tbody>
                 <xsl:for-each select="książka">
                     <tr>
-                        <td><xsl:value-of select="tytuł"/></td>
+                        <td>
+                            <xsl:value-of select="tytuł"/>
+                        </td>
                         <td>
                             <xsl:apply-templates select="autorzy"/>
                         </td>
-                        <td><xsl:value-of select="język"/></td>
-                        <td><xsl:value-of select="dział"/></td>
-                        <td><xsl:value-of select="rok-wydania"/></td>
-                        <td><xsl:value-of select="cena"/></td>
+                        <td>
+                            <xsl:value-of select="język"/>
+                        </td>
+                        <td>
+                            <xsl:value-of select="dział"/>
+                        </td>
+                        <td>
+                            <xsl:value-of select="rok-wydania"/>
+                        </td>
+                        <td>
+                            <xsl:value-of select="format-number(cena, '#.00####')"/>
+                        </td>
                     </tr>
                 </xsl:for-each>
             </tbody>
@@ -109,10 +123,61 @@
 
     <xsl:template match="/księgarnia/działy">
         <h3 id="{generate-id(.)}">Działy</h3>
+        <table>
+            <thead>
+                <tr>
+                    <xsl:for-each select="definicja-działu[1]/*">
+                        <th>
+                            <xsl:value-of select="name(.)" />
+                        </th>
+                    </xsl:for-each>
+                </tr>
+            </thead>
+            <tbody>
+                <xsl:for-each select="definicja-działu">
+                    <tr>
+                        <td>
+                            <xsl:value-of select="id"/>
+                        </td>
+                        <td>
+                            <xsl:value-of select="nazwa"/>
+                        </td>
+                    </tr>
+                </xsl:for-each>
+            </tbody>
+        </table>
     </xsl:template>
 
     <xsl:template match="/księgarnia/statystyki">
         <h3 id="{generate-id(.)}">Statystyki</h3>
+        <h4>Statystyki zostały wygenerowane na podstawie powyższych wyników.</h4>
+        <p>
+            <span>Liczba wszystkich książek w bibliotece: </span>
+            <span style="color: red;">
+                <xsl:value-of select="ilość-książek/wszystkie"/>
+            </span>
+        </p>
+        <table>
+            <caption>Liczby książek w poszczególnych językach</caption>
+            <thead>
+                <tr>
+                    <th>Język</th>
+                    <th>Ilość</th>
+                </tr>
+            </thead>
+            <tbody>
+                <xsl:for-each select="ilość-książek/język/*">
+                    <tr>
+                        <td>
+                            <xsl:value-of select="name(.)" />
+                        </td>
+                        <td>
+                            <xsl:value-of select="." />
+                        </td>
+                    </tr>
+                </xsl:for-each>
+            </tbody>
+        </table>
     </xsl:template>
 
 </xsl:stylesheet>
