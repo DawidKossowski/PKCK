@@ -1,0 +1,202 @@
+	KSIĘGARNIA
+
+
+	AUTORZY:
+
+Szymon Cytrowski(203863)
+Kontakt:
+	203863@edu.p.lodz.pl
+	321-321-321
+
+
+Dawid Kossowski(203908)
+Kontakt:
+	203908@edu.p.lodz.pl
+	123-123-123
+
+
+	KSIĄŻKI:
+
+	Pan Tadeusz
+Status		dostępna
+Autorzy:	Adam Mickiewicz    
+Język:		Polski
+Dział:		Literatura
+Rok wydania: 	1996
+Cena:		54zł 99gr
+
+	Ogniem i mieczem
+Status		dostępna
+Autorzy:	Henryk Sienkiewicz    
+Język:		Polski
+Dział:		Literatura
+Rok wydania: 	1945
+Cena:		70zł 00gr
+
+	Algebra
+Status		dostępna
+Autorzy:	Andrzej Białynicki    
+Język:		Polski
+Dział:		Literatura
+Rok wydania: 	2017
+Cena:		43zł 60gr
+
+	Bracia Karmazow
+Status		dostępna
+Autorzy:	Fiodor Dostojewski    
+Język:		Niemiecki
+Dział:		Literatura
+Rok wydania: 	2014
+Cena:		zł gr
+
+	Pierwszy śnieg
+Status		dostępna
+Autorzy:	Iwona Zimnicka    
+Język:		Polski
+Dział:		Literatura
+Rok wydania: 	2017
+Cena:		35zł 00gr
+
+	Wprowadzenie do algorytmów
+Status		niedostępna
+Autorzy:	Thomas Cormen    
+Język:		Polski
+Dział:		Naukowe
+Rok wydania: 	2017
+Cena:		30zł 00gr
+
+	Statystyka
+Status		dostępna
+Autorzy:	Mieczysław Sobczyk    
+Język:		Polski
+Dział:		Naukowe
+Rok wydania: 	2011
+Cena:		35zł 00gr
+
+	Muminki - księga I
+Status		dostępna
+Autorzy:	Tove Jansson    
+Język:		Polski
+Dział:		Podręczniki
+Rok wydania: 	2017
+Cena:		12zł 00gr
+
+	Storyfun for Starters 1
+Status		dostępna
+Autorzy:	Karen Saxby    
+Język:		Angielski
+Dział:		Podręczniki
+Rok wydania: 	2017
+Cena:		54zł 45gr
+
+	Angielski na obcasach
+Status		dostępna
+Autorzy:	Gabriela Oberda    Julian Zamorski    
+Język:		Polski
+Dział:		Podręczniki
+Rok wydania: 	2016
+Cena:		24zł 94gr
+
+	Słownik idiomów angielskich
+Status		dostępna
+Autorzy:	Anna Strzeszewska    
+Język:		Polski
+Dział:		Podręczniki
+Rok wydania: 	2017
+Cena:		9zł 90gr
+
+	Nowe przygody Bolka i Lolka
+Status		dostępna
+Autorzy:	Maria Bosowicz    
+Język:		Polski
+Dział:		Dziecięce
+Rok wydania: 	2013
+Cena:		zł gr
+
+	Strażak Sam
+Status		dostępna
+Autorzy:	Praca zbiorowa
+Język:		Polski
+Dział:		Dziecięce
+Rok wydania: 	2011
+Cena:		7zł 00gr
+
+	Hello Kitty i przyjaciele
+Status		dostępna
+Autorzy:	Praca zbiorowa
+Język:		Angielski
+Dział:		Dziecięce
+Rok wydania: 	2014
+Cena:		4zł 00gr
+
+	Ordynacja Podatkowa NIP 2018
+Status		dostępna
+Autorzy:	Praca zbiorowa
+Język:		Polski
+Dział:		Czasopisma
+Rok wydania: 	2018
+Cena:		27zł 18gr
+
+	Wieś i rolnictwo
+Status		dostępna
+Autorzy:	Mateusz Kranicki    Janusz Wiechno    
+Język:		Polski
+Dział:		Czasopisma
+Rok wydania: 	2017
+Cena:		15zł 00gr
+
+	Studia Genealogiczne
+Status		dostępna
+Autorzy:	Piotr Maroński    
+Język:		Polski
+Dział:		Czasopisma
+Rok wydania: 	2018
+Cena:		zł gr
+
+	Kajko i Kokosz
+Status		dostępna
+Autorzy:	Praca zbiorowa
+Język:		Niemiecki
+Dział:		Komiksy
+Rok wydania: 	2013
+Cena:		zł gr
+
+	Avengers i X-Men
+Status		niedostępna
+Autorzy:	Adam Kubert    Francis Yu    
+Język:		Angielski
+Dział:		Komiksy
+Rok wydania: 	2017
+Cena:		10zł 00gr
+
+	Daredevil
+Status		dostępna
+Autorzy:	Alex Maleev    David Mack    Terry Dodson    
+Język:		Angielski
+Dział:		Komiksy
+Rok wydania: 	2014
+Cena:		77zł 19gr
+
+
+	DZIAŁY:
+
+D1 - Literatura
+D2 - Naukowe
+D3 - Podręczniki
+D4 - Dziecięce
+D5 - Czasopisma
+D6 - Komiksy
+
+
+	STATYSTYKI:
+
+WARTOŚĆ		ILOŚĆ
+
+Książki
+Wszystkie 	20
+Bieżący rok 	2
+Po polsku 	14
+Po angielsku 	4
+Po niemiecku 	2
+
+Działy 		6
