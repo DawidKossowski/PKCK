@@ -25,6 +25,13 @@
                 </restriction>
             </simpleType>
         </attribute>
-        <attribute name="nazwaDziału" type="string"/>
+        <attribute name="nazwaDziału">
+        	<simpleType>
+		        <restriction base="string">
+		            <minLength value="5"/>
+		            <maxLength value="20"/>
+		        </restriction>
+		    </simpleType>
+        </attribute>
     </attributeGroup>
 </schema>

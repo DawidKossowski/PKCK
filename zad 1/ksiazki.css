@@ -96,3 +96,16 @@ książki książka:first-child > rok-wydania::before {
 książki książka:first-child > cena::before {
     content: "Cena";
 }
+
+
+
+
+
+książki książka > cena[waluta="EUR"] {
+	color: red;
+}
+
+książki książka:nth-child(3) {
+	background-color: green;
+}
+

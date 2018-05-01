@@ -19,7 +19,7 @@
         dostępna (true|false) "true">
 <!ELEMENT tytuł (#PCDATA)>
 <!ELEMENT autorzy (autor*)>
-<!ATTLIST autorzy pracaZbiorowa (true|false) "false">
+<!ATTLIST autorzy pracaZbiorowa (true|false) #FIXED "false">
 <!ELEMENT autor (imię,nazwisko)>
 <!ELEMENT język (#PCDATA)>
 <!ELEMENT dział EMPTY>

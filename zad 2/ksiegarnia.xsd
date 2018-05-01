@@ -2,7 +2,6 @@
 <xs:schema	xmlns:xs="http://www.w3.org/2001/XMLSchema"
               xmlns:tworca="http://tworca.example.com"
               xmlns:dzialy="http://definicje-dzialow.example.com">
-
     <xs:import	namespace="http://tworca.example.com"
                   schemaLocation="tworca.xsd"/>
     <xs:import	namespace="http://definicje-dzialow.example.com"
@@ -74,7 +73,14 @@
         <xs:attribute name="dostępna" type="xs:boolean" default="true"/>
     </xs:attributeGroup>
 
-    <xs:element name="tytuł" type="xs:string"/>
+    <xs:element name="tytuł">
+	    <xs:simpleType>
+	        <xs:restriction base="xs:string">
+	            <xs:minLength value="5"/>
+	            <xs:maxLength value="40"/>
+	        </xs:restriction>
+	    </xs:simpleType>
+	</xs:element>
 
     <xs:element name="autorzy">
         <xs:complexType>
@@ -103,7 +109,7 @@
 
     <xs:element name="dział">
         <xs:complexType>
-            <xs:attribute name="id" type="xs:IDREF"/>
+            <xs:attribute name="id" type="xs:string"/>
         </xs:complexType>
     </xs:element>
 
@@ -115,11 +121,17 @@
             </xs:restriction>
         </xs:simpleType>
     </xs:element>
+    
+    <xs:simpleType name="cenaTyp">
+    	<xs:restriction base="xs:float">
+    		<xs:minExclusive value="0" />
+    	</xs:restriction>
+    </xs:simpleType>
 
     <xs:element name="cena">
         <xs:complexType>
             <xs:simpleContent>
-                <xs:extension base="xs:float">
+                <xs:extension base="cenaTyp">
                     <xs:attribute name="waluta" type="rodzajeWalut"/>
                 </xs:extension>
             </xs:simpleContent>
