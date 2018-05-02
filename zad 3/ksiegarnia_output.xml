@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><księgarnia>
+<?xml version="1.0" encoding="utf-8"?>
+<księgarnia>
     <twórcy>
-<twórca idTwórcy="T2">
+      <twórca idTwórcy="T2">
             <imię>Szymon</imię>
             <nazwisko>Cytrowski</nazwisko>
             <semestr>VI</semestr>
@@ -10,7 +11,7 @@
                 <telefon>321-321-321</telefon>
             </kontakt>
         </twórca>
-<twórca idTwórcy="T1">
+      <twórca idTwórcy="T1">
             <imię>Dawid</imię>
             <nazwisko>Kossowski</nazwisko>
             <semestr>VI</semestr>
@@ -20,307 +21,307 @@
                 <telefon>123-123-123</telefon>
             </kontakt>
         </twórca>
-</twórcy>
+   </twórcy>
 
     <książki>
-<książka id="K1" dostępna="true">
-<tytuł>Pan Tadeusz</tytuł>
-<autorzy>
-<autor>
+      <książka id="K1" dostępna="true">
+         <tytuł>Pan Tadeusz</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Adam</imię>
                     <nazwisko>Mickiewicz</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Literatura</dział>
-<rok-wydania>1996</rok-wydania>
-<cena>54.99</cena>
-</książka>
-<książka id="K2" dostępna="true">
-<tytuł>Ogniem i mieczem</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Literatura</dział>
+         <rok-wydania>1996</rok-wydania>
+         <cena>54.99</cena>
+      </książka>
+      <książka id="K2" dostępna="true">
+         <tytuł>Ogniem i mieczem</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Henryk</imię>
                     <nazwisko>Sienkiewicz</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Literatura</dział>
-<rok-wydania>1945</rok-wydania>
-<cena>70.00</cena>
-</książka>
-<książka id="K15" dostępna="true">
-<tytuł>Algebra</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Literatura</dział>
+         <rok-wydania>1945</rok-wydania>
+         <cena>70.00</cena>
+      </książka>
+      <książka id="K15" dostępna="true">
+         <tytuł>Algebra</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Andrzej</imię>
                     <nazwisko>Białynicki</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Literatura</dział>
-<rok-wydania>2017</rok-wydania>
-<cena>43.60</cena>
-</książka>
-<książka id="K17" dostępna="true">
-<tytuł>Bracia Karmazow</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Literatura</dział>
+         <rok-wydania>2017</rok-wydania>
+         <cena>43.60</cena>
+      </książka>
+      <książka id="K17" dostępna="true">
+         <tytuł>Bracia Karmazow</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Fiodor</imię>
                     <nazwisko>Dostojewski</nazwisko>
                 </autor>
-</autorzy>
-<język>Niemiecki</język>
-<dział>Literatura</dział>
-<rok-wydania>2014</rok-wydania>
-<cena>84</cena>
-</książka>
-<książka id="K20" dostępna="true">
-<tytuł>Pierwszy śnieg</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Niemiecki</język>
+         <dział>Literatura</dział>
+         <rok-wydania>2014</rok-wydania>
+         <cena>84</cena>
+      </książka>
+      <książka id="K20" dostępna="true">
+         <tytuł>Pierwszy śnieg</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Iwona</imię>
                     <nazwisko>Zimnicka</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Literatura</dział>
-<rok-wydania>2017</rok-wydania>
-<cena>35.00</cena>
-</książka>
-<książka id="K3" dostępna="false">
-<tytuł>Wprowadzenie do algorytmów</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Literatura</dział>
+         <rok-wydania>2017</rok-wydania>
+         <cena>35.00</cena>
+      </książka>
+      <książka id="K3" dostępna="false">
+         <tytuł>Wprowadzenie do algorytmów</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Thomas</imię>
                     <nazwisko>Cormen</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Naukowe</dział>
-<rok-wydania>2017</rok-wydania>
-<cena>30.00</cena>
-</książka>
-<książka id="K8" dostępna="true">
-<tytuł>Statystyka</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Naukowe</dział>
+         <rok-wydania>2017</rok-wydania>
+         <cena>30.00</cena>
+      </książka>
+      <książka id="K8" dostępna="true">
+         <tytuł>Statystyka</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Mieczysław</imię>
                     <nazwisko>Sobczyk</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Naukowe</dział>
-<rok-wydania>2011</rok-wydania>
-<cena>35.00</cena>
-</książka>
-<książka id="K4" dostępna="true">
-<tytuł>Muminki - księga I</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Naukowe</dział>
+         <rok-wydania>2011</rok-wydania>
+         <cena>35.00</cena>
+      </książka>
+      <książka id="K4" dostępna="true">
+         <tytuł>Muminki - księga I</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Tove</imię>
                     <nazwisko>Jansson</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Podręczniki</dział>
-<rok-wydania>2017</rok-wydania>
-<cena>12.00</cena>
-</książka>
-<książka id="K7" dostępna="true">
-<tytuł>Storyfun for Starters 1</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Podręczniki</dział>
+         <rok-wydania>2017</rok-wydania>
+         <cena>12.00</cena>
+      </książka>
+      <książka id="K7" dostępna="true">
+         <tytuł>Storyfun for Starters 1</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Karen</imię>
                     <nazwisko>Saxby</nazwisko>
                 </autor>
-</autorzy>
-<język>Angielski</język>
-<dział>Podręczniki</dział>
-<rok-wydania>2017</rok-wydania>
-<cena>54.45</cena>
-</książka>
-<książka id="K11" dostępna="true">
-<tytuł>Angielski na obcasach</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Angielski</język>
+         <dział>Podręczniki</dział>
+         <rok-wydania>2017</rok-wydania>
+         <cena>54.45</cena>
+      </książka>
+      <książka id="K11" dostępna="true">
+         <tytuł>Angielski na obcasach</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Gabriela</imię>
                     <nazwisko>Oberda</nazwisko>
                 </autor>
-<autor>
+            <autor>
                     <imię>Julian</imię>
                     <nazwisko>Zamorski</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Podręczniki</dział>
-<rok-wydania>2016</rok-wydania>
-<cena>24.94</cena>
-</książka>
-<książka id="K19" dostępna="true">
-<tytuł>Słownik idiomów angielskich</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Podręczniki</dział>
+         <rok-wydania>2016</rok-wydania>
+         <cena>24.94</cena>
+      </książka>
+      <książka id="K19" dostępna="true">
+         <tytuł>Słownik idiomów angielskich</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Anna</imię>
                     <nazwisko>Strzeszewska</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Podręczniki</dział>
-<rok-wydania>2017</rok-wydania>
-<cena>9.90</cena>
-</książka>
-<książka id="K5" dostępna="true">
-<tytuł>Nowe przygody Bolka i Lolka</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Podręczniki</dział>
+         <rok-wydania>2017</rok-wydania>
+         <cena>9.90</cena>
+      </książka>
+      <książka id="K5" dostępna="true">
+         <tytuł>Nowe przygody Bolka i Lolka</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Maria</imię>
                     <nazwisko>Bosowicz</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Dziecięce</dział>
-<rok-wydania>2013</rok-wydania>
-<cena>42</cena>
-</książka>
-<książka id="K10" dostępna="true">
-<tytuł>Strażak Sam</tytuł>
-<autorzy>Praca zbiorowa</autorzy>
-<język>Polski</język>
-<dział>Dziecięce</dział>
-<rok-wydania>2011</rok-wydania>
-<cena>7.00</cena>
-</książka>
-<książka id="K16" dostępna="true">
-<tytuł>Hello Kitty i przyjaciele</tytuł>
-<autorzy>Praca zbiorowa</autorzy>
-<język>Angielski</język>
-<dział>Dziecięce</dział>
-<rok-wydania>2014</rok-wydania>
-<cena>4.00</cena>
-</książka>
-<książka id="K6" dostępna="true">
-<tytuł>Ordynacja Podatkowa NIP 2018</tytuł>
-<autorzy>Praca zbiorowa</autorzy>
-<język>Polski</język>
-<dział>Czasopisma</dział>
-<rok-wydania>2018</rok-wydania>
-<cena>27.18</cena>
-</książka>
-<książka id="K13" dostępna="true">
-<tytuł>Wieś i rolnictwo</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Dziecięce</dział>
+         <rok-wydania>2013</rok-wydania>
+         <cena>42</cena>
+      </książka>
+      <książka id="K10" dostępna="true">
+         <tytuł>Strażak Sam</tytuł>
+         <autorzy>Praca zbiorowa</autorzy>
+         <język>Polski</język>
+         <dział>Dziecięce</dział>
+         <rok-wydania>2011</rok-wydania>
+         <cena>7.00</cena>
+      </książka>
+      <książka id="K16" dostępna="true">
+         <tytuł>Hello Kitty i przyjaciele</tytuł>
+         <autorzy>Praca zbiorowa</autorzy>
+         <język>Angielski</język>
+         <dział>Dziecięce</dział>
+         <rok-wydania>2014</rok-wydania>
+         <cena>4.00</cena>
+      </książka>
+      <książka id="K6" dostępna="true">
+         <tytuł>Ordynacja Podatkowa NIP 2018</tytuł>
+         <autorzy>Praca zbiorowa</autorzy>
+         <język>Polski</język>
+         <dział>Czasopisma</dział>
+         <rok-wydania>2018</rok-wydania>
+         <cena>27.18</cena>
+      </książka>
+      <książka id="K13" dostępna="true">
+         <tytuł>Wieś i rolnictwo</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Mateusz</imię>
                     <nazwisko>Kranicki</nazwisko>
                 </autor>
-<autor>
+            <autor>
                     <imię>Janusz</imię>
                     <nazwisko>Wiechno</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Czasopisma</dział>
-<rok-wydania>2017</rok-wydania>
-<cena>15.00</cena>
-</książka>
-<książka id="K14" dostępna="true">
-<tytuł>Studia Genealogiczne</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Czasopisma</dział>
+         <rok-wydania>2017</rok-wydania>
+         <cena>15.00</cena>
+      </książka>
+      <książka id="K14" dostępna="true">
+         <tytuł>Studia Genealogiczne</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Piotr</imię>
                     <nazwisko>Maroński</nazwisko>
                 </autor>
-</autorzy>
-<język>Polski</język>
-<dział>Czasopisma</dział>
-<rok-wydania>2018</rok-wydania>
-<cena>126</cena>
-</książka>
-<książka id="K9" dostępna="true">
-<tytuł>Kajko i Kokosz</tytuł>
-<autorzy>Praca zbiorowa</autorzy>
-<język>Niemiecki</język>
-<dział>Komiksy</dział>
-<rok-wydania>2013</rok-wydania>
-<cena>294</cena>
-</książka>
-<książka id="K12" dostępna="false">
-<tytuł>Avengers i X-Men</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Polski</język>
+         <dział>Czasopisma</dział>
+         <rok-wydania>2018</rok-wydania>
+         <cena>126</cena>
+      </książka>
+      <książka id="K9" dostępna="true">
+         <tytuł>Kajko i Kokosz</tytuł>
+         <autorzy>Praca zbiorowa</autorzy>
+         <język>Niemiecki</język>
+         <dział>Komiksy</dział>
+         <rok-wydania>2013</rok-wydania>
+         <cena>294</cena>
+      </książka>
+      <książka id="K12" dostępna="false">
+         <tytuł>Avengers i X-Men</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Adam</imię>
                     <nazwisko>Kubert</nazwisko>
                 </autor>
-<autor>
+            <autor>
                     <imię>Francis</imię>
                     <nazwisko>Yu</nazwisko>
                 </autor>
-</autorzy>
-<język>Angielski</język>
-<dział>Komiksy</dział>
-<rok-wydania>2017</rok-wydania>
-<cena>10.00</cena>
-</książka>
-<książka id="K18" dostępna="true">
-<tytuł>Daredevil</tytuł>
-<autorzy>
-<autor>
+         </autorzy>
+         <język>Angielski</język>
+         <dział>Komiksy</dział>
+         <rok-wydania>2017</rok-wydania>
+         <cena>10.00</cena>
+      </książka>
+      <książka id="K18" dostępna="true">
+         <tytuł>Daredevil</tytuł>
+         <autorzy>
+            <autor>
                     <imię>Alex</imię>
                     <nazwisko>Maleev</nazwisko>
                 </autor>
-<autor>
+            <autor>
                     <imię>David</imię>
                     <nazwisko>Mack</nazwisko>
                 </autor>
-<autor>
+            <autor>
                     <imię>Terry</imię>
                     <nazwisko>Dodson</nazwisko>
                 </autor>
-</autorzy>
-<język>Angielski</język>
-<dział>Komiksy</dział>
-<rok-wydania>2014</rok-wydania>
-<cena>77.19</cena>
-</książka>
-</książki>
+         </autorzy>
+         <język>Angielski</język>
+         <dział>Komiksy</dział>
+         <rok-wydania>2014</rok-wydania>
+         <cena>77.19</cena>
+      </książka>
+   </książki>
 
     <działy>
-<definicja-działu>
-<id>D1</id>
-<nazwa>Literatura</nazwa>
-</definicja-działu>
-<definicja-działu>
-<id>D2</id>
-<nazwa>Naukowe</nazwa>
-</definicja-działu>
-<definicja-działu>
-<id>D3</id>
-<nazwa>Podręczniki</nazwa>
-</definicja-działu>
-<definicja-działu>
-<id>D4</id>
-<nazwa>Dziecięce</nazwa>
-</definicja-działu>
-<definicja-działu>
-<id>D5</id>
-<nazwa>Czasopisma</nazwa>
-</definicja-działu>
-<definicja-działu>
-<id>D6</id>
-<nazwa>Komiksy</nazwa>
-</definicja-działu>
-</działy>
-<statystyki>
-<ilość-książek>
-<wszystkie>20</wszystkie>
-<bieżacy-rok>2</bieżacy-rok>
-<język>
-<polski>14</polski>
-<angielski>4</angielski>
-<niemiecki>2</niemiecki>
-</język>
-</ilość-książek>
-<ilość-działów>6</ilość-działów>
-</statystyki>
+      <definicja-działu>
+         <id>D1</id>
+         <nazwa>Literatura</nazwa>
+      </definicja-działu>
+      <definicja-działu>
+         <id>D2</id>
+         <nazwa>Naukowe</nazwa>
+      </definicja-działu>
+      <definicja-działu>
+         <id>D3</id>
+         <nazwa>Podręczniki</nazwa>
+      </definicja-działu>
+      <definicja-działu>
+         <id>D4</id>
+         <nazwa>Dziecięce</nazwa>
+      </definicja-działu>
+      <definicja-działu>
+         <id>D5</id>
+         <nazwa>Czasopisma</nazwa>
+      </definicja-działu>
+      <definicja-działu>
+         <id>D6</id>
+         <nazwa>Komiksy</nazwa>
+      </definicja-działu>
+   </działy>
+   <statystyki>
+      <ilość-książek>
+         <wszystkie>20</wszystkie>
+         <bieżacy-rok>2</bieżacy-rok>
+         <język>
+            <polski>14</polski>
+            <angielski>4</angielski>
+            <niemiecki>2</niemiecki>
+         </język>
+      </ilość-książek>
+      <ilość-działów>6</ilość-działów>
+   </statystyki>
 </księgarnia>

@@ -6,7 +6,7 @@
     <xsl:template match="/">
         <księgarnia>
             <xsl:apply-templates />
-
+            
             <xsl:element name="statystyki">
                 <xsl:call-template name="stat" />
             </xsl:element>
@@ -21,13 +21,20 @@
             </xsl:for-each>
         </twórcy>
     </xsl:template>
-
+    
     <xsl:template match="/księgarnia/książki">
         <książki>
             <xsl:for-each select="książka">
                 <xsl:sort select="dział/@id"/>
 
-                <książka xsl:use-attribute-sets="daneKsiążki">
+                <książka>
+                    <xsl:attribute name="id">
+                        <xsl:value-of select="@idKsiążki" />
+                    </xsl:attribute>
+                    <xsl:attribute name="dostępna">
+                        <xsl:value-of select="@dostępna" />
+                    </xsl:attribute>
+                    
                     <tytuł>
                         <xsl:value-of select="tytuł"/>
                     </tytuł>
@@ -51,20 +58,10 @@
                         </xsl:call-template>
                     </cena>
                 </książka>
-
-                <xsl:attribute-set name="daneKsiążki">
-                    <xsl:attribute name="id">
-                        <xsl:value-of select="@idKsiążki" />
-                    </xsl:attribute>
-                    <xsl:attribute name="dostępna">
-                        <xsl:value-of select="@dostępna" />
-                    </xsl:attribute>
-                </xsl:attribute-set>
-
             </xsl:for-each>
         </książki>
     </xsl:template>
-
+    
     <xsl:template match="/księgarnia/książki/książka/autorzy">
         <xsl:choose>
             <xsl:when test="@pracaZbiorowa = 'true'">
@@ -77,7 +74,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-
+    
     <xsl:template match="/księgarnia/książki/książka/dział">
         <xsl:variable name="id">
             <xsl:value-of select="@id" />
@@ -87,7 +84,7 @@
             <xsl:value-of select="/księgarnia/lista-działów/definicja-działu[@idDziału = $id]/@nazwaDziału" />
         </dział>
     </xsl:template>
-
+    
     <xsl:template name="policz_cene">
         <xsl:param name="wartość"/>
         <xsl:param name="waluta"/>
@@ -105,9 +102,8 @@
                 <xsl:value-of select="$wartość" />
             </xsl:otherwise>
         </xsl:choose>
-
     </xsl:template>
-
+    
     <xsl:template match="/księgarnia/lista-działów">
         <działy>
             <xsl:for-each select="definicja-działu">
@@ -122,7 +118,7 @@
             </xsl:for-each>
         </działy>
     </xsl:template>
-
+    
     <xsl:template name="stat">
         <ilość-książek>
             <wszystkie>

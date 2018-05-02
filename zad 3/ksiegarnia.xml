@@ -3,7 +3,6 @@
 <?xml-stylesheet type="text/css" href="ksiazki.css"?>
 <?xml-stylesheet type="text/css" href="dzialy.css"?>
 
-<!DOCTYPE księgarnia SYSTEM "ksiegarnia.dtd">
 <księgarnia>
     <twórcy>
         <twórca idTwórcy="T1">
