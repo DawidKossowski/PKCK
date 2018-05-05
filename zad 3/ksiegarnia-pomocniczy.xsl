@@ -93,10 +93,10 @@
 
         <xsl:choose>
             <xsl:when test="$waluta = 'EUR'">
-                <xsl:value-of select="$wartość * $przelicznikEuro" />
+                <xsl:value-of select="format-number($wartość * $przelicznikEuro, '0.00')" />
             </xsl:when>
-            <xsl:when test="$waluta = 'EUR'">
-                <xsl:value-of select="$wartość * $przelicznikDolar" />
+            <xsl:when test="$waluta = 'USD'">
+                <xsl:value-of select="format-number($wartość * $przelicznikDolar, '0.00')" />
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$wartość" />

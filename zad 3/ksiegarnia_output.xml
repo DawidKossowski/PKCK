@@ -74,7 +74,7 @@
          <język>Niemiecki</język>
          <dział>Literatura</dział>
          <rok-wydania>2014</rok-wydania>
-         <cena>84</cena>
+         <cena>84.00</cena>
       </książka>
       <książka id="K20" dostępna="true">
          <tytuł>Pierwszy śnieg</tytuł>
@@ -100,7 +100,7 @@
          <język>Polski</język>
          <dział>Naukowe</dział>
          <rok-wydania>2017</rok-wydania>
-         <cena>30.00</cena>
+         <cena>90.00</cena>
       </książka>
       <książka id="K8" dostępna="true">
          <tytuł>Statystyka</tytuł>
@@ -126,7 +126,7 @@
          <język>Polski</język>
          <dział>Podręczniki</dział>
          <rok-wydania>2017</rok-wydania>
-         <cena>12.00</cena>
+         <cena>36.00</cena>
       </książka>
       <książka id="K7" dostępna="true">
          <tytuł>Storyfun for Starters 1</tytuł>
@@ -182,7 +182,7 @@
          <język>Polski</język>
          <dział>Dziecięce</dział>
          <rok-wydania>2013</rok-wydania>
-         <cena>42</cena>
+         <cena>42.00</cena>
       </książka>
       <książka id="K10" dostępna="true">
          <tytuł>Strażak Sam</tytuł>
@@ -198,7 +198,7 @@
          <język>Angielski</język>
          <dział>Dziecięce</dział>
          <rok-wydania>2014</rok-wydania>
-         <cena>4.00</cena>
+         <cena>12.00</cena>
       </książka>
       <książka id="K6" dostępna="true">
          <tytuł>Ordynacja Podatkowa NIP 2018</tytuł>
@@ -236,7 +236,7 @@
          <język>Polski</język>
          <dział>Czasopisma</dział>
          <rok-wydania>2018</rok-wydania>
-         <cena>126</cena>
+         <cena>126.00</cena>
       </książka>
       <książka id="K9" dostępna="true">
          <tytuł>Kajko i Kokosz</tytuł>
@@ -244,7 +244,7 @@
          <język>Niemiecki</język>
          <dział>Komiksy</dział>
          <rok-wydania>2013</rok-wydania>
-         <cena>294</cena>
+         <cena>294.00</cena>
       </książka>
       <książka id="K12" dostępna="false">
          <tytuł>Avengers i X-Men</tytuł>
@@ -261,7 +261,7 @@
          <język>Angielski</język>
          <dział>Komiksy</dział>
          <rok-wydania>2017</rok-wydania>
-         <cena>10.00</cena>
+         <cena>30.00</cena>
       </książka>
       <książka id="K18" dostępna="true">
          <tytuł>Daredevil</tytuł>
