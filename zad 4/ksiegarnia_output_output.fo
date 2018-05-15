@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+   <fo:layout-master-set>
+      <fo:simple-page-master master-name="default"
+                             margin-left="2cm"
+                             margin-right="2cm"
+                             margin-top="15mm"
+                             margin-bottom="15mm">
+         <fo:region-body/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="default">
+      <fo:flow flow-name="xsl-region-body">
+         <fo:list-block>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>Imię: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em" font-weight="bold">Szymon</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>Nazwisko: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em" font-weight="bold">Cytrowski</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>Semestr: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">VI</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>Indeks: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">203863</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item margin-bottom="10mm">
+               <fo:list-item-label>
+                  <fo:block>Kontakt: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">203863@edu.p.lodz.pl</fo:block>
+                  <fo:block margin-left="15em">321-321-321</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>Imię: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em" font-weight="bold">Dawid</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>Nazwisko: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em" font-weight="bold">Kossowski</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>Semestr: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">VI</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>Indeks: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">203908</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item margin-bottom="10mm">
+               <fo:list-item-label>
+                  <fo:block>Kontakt: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">203908@edu.p.lodz.pl</fo:block>
+                  <fo:block margin-left="15em">123-123-123</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+
+         <fo:block margin-bottom="3mm">Lista książek</fo:block>
+         <fo:table>
+            <fo:table-header>
+               <fo:table-row>
+                  <fo:table-cell font-weight="bold" border="solid 1px black">
+                     <fo:block>Tytuł</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell font-weight="bold" border="solid 1px black">
+                     <fo:block>Autorzy</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell font-weight="bold" border="solid 1px black">
+                     <fo:block>Język</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell font-weight="bold" border="solid 1px black">
+                     <fo:block>Dział</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell font-weight="bold" border="solid 1px black">
+                     <fo:block>Rok-wydania</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell font-weight="bold" border="solid 1px black">
+                     <fo:block>Cena</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+            </fo:table-header>
+            <fo:table-body>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Pan Tadeusz</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Adam
+                    Mickiewicz
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Literatura</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>1996</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>54.99</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Ogniem i mieczem</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Henryk
+                    Sienkiewicz
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Literatura</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>1945</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>70.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Algebra</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Andrzej
+                    Białynicki
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Literatura</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2017</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>43.60</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Bracia Karmazow</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Fiodor
+                    Dostojewski
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Niemiecki</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Literatura</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2014</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>84.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Pierwszy śnieg</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Iwona
+                    Zimnicka
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Literatura</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2017</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>35.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Wprowadzenie do algorytmów</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Thomas
+                    Cormen
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Naukowe</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2017</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>90.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Statystyka</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Mieczysław
+                    Sobczyk
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Naukowe</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2011</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>35.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Muminki - księga I</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Tove
+                    Jansson
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Podręczniki</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2017</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>36.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Storyfun for Starters 1</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Karen
+                    Saxby
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Angielski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Podręczniki</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2017</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>54.45</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Angielski na obcasach</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Gabriela
+                    Oberda
+                
+            
+                    Julian
+                    Zamorski
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Podręczniki</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2016</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>24.94</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Słownik idiomów angielskich</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Anna
+                    Strzeszewska
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Podręczniki</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2017</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>9.90</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Nowe przygody Bolka i Lolka</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Maria
+                    Bosowicz
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Dziecięce</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2013</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>42.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Strażak Sam</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Praca zbiorowa</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Dziecięce</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2011</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>7.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Hello Kitty i przyjaciele</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Praca zbiorowa</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Angielski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Dziecięce</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2014</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>12.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Ordynacja Podatkowa NIP 2018</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Praca zbiorowa</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Czasopisma</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2018</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>27.18</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Wieś i rolnictwo</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Mateusz
+                    Kranicki
+                
+            
+                    Janusz
+                    Wiechno
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Czasopisma</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2017</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>15.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Studia Genealogiczne</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Piotr
+                    Maroński
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Polski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Czasopisma</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2018</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>126.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Kajko i Kokosz</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Praca zbiorowa</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Niemiecki</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Komiksy</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2013</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>294.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Avengers i X-Men</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Adam
+                    Kubert
+                
+            
+                    Francis
+                    Yu
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Angielski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Komiksy</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2017</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>30.00</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Daredevil</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>
+            
+                    Alex
+                    Maleev
+                
+            
+                    David
+                    Mack
+                
+            
+                    Terry
+                    Dodson
+                
+         </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Angielski</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>Komiksy</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>2014</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell border="solid 1px black">
+                     <fo:block>77.19</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+            </fo:table-body>
+         </fo:table>
+
+         <fo:block margin-bottom="3mm" margin-top="20mm">Działy</fo:block>
+         <fo:table width="5cm">
+            <fo:table-header>
+               <fo:table-row>
+                  <fo:table-cell font-weight="bold">
+                     <fo:block>Id</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell font-weight="bold">
+                     <fo:block>Nazwa</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+            </fo:table-header>
+            <fo:table-body>
+               <fo:table-row border-top="1px solid black">
+                  <fo:table-cell>
+                     <fo:block>D1</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell>
+                     <fo:block>Literatura</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-top="1px solid black">
+                  <fo:table-cell>
+                     <fo:block>D2</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell>
+                     <fo:block>Naukowe</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-top="1px solid black">
+                  <fo:table-cell>
+                     <fo:block>D3</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell>
+                     <fo:block>Podręczniki</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-top="1px solid black">
+                  <fo:table-cell>
+                     <fo:block>D4</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell>
+                     <fo:block>Dziecięce</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-top="1px solid black">
+                  <fo:table-cell>
+                     <fo:block>D5</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell>
+                     <fo:block>Czasopisma</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-top="1px solid black">
+                  <fo:table-cell>
+                     <fo:block>D6</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell>
+                     <fo:block>Komiksy</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+            </fo:table-body>
+         </fo:table>
+         <fo:block margin-bottom="3mm" margin-top="20mm">Statystyki</fo:block>
+         <fo:list-block>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block font-weight="bold">Wartosc: </fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em" font-weight="bold">Ilosc</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>polski</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">14</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>angielski</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">4</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>niemiecki</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">2</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>literatura</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">5</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>naukowe</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">2</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>podręczniki</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">4</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>dziecięce</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">3</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>czasopisma</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">3</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item>
+               <fo:list-item-label>
+                  <fo:block>komiksy</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">3</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+         </fo:list-block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>

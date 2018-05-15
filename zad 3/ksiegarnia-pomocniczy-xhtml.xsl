@@ -64,8 +64,13 @@
                         padding: 10px 0;
                     }
                     
+                    .table-container {
+                        display: flex;
+                    }
+                    
                     .table-small {
                         width: 30%;
+                        margin-right: 40px;
                     }
                 </style>
             </head>
@@ -209,27 +214,52 @@
                 <xsl:value-of select="ilość-książek/bieżacy-rok"/>
             </span>
         </p>
-        <table class="table-small">
-            <caption>Liczby książek w poszczególnych językach</caption>
-            <thead>
-                <tr>
-                    <th>Język</th>
-                    <th>Ilość</th>
-                </tr>
-            </thead>
-            <tbody>
-                <xsl:for-each select="ilość-książek/język/*">
+        
+        <div class="table-container">
+            <table class="table-small">
+                <caption>Liczby książek w poszczególnych językach</caption>
+                <thead>
                     <tr>
-                        <td>
-                            <xsl:value-of select="name(.)" />
-                        </td>
-                        <td>
-                            <xsl:value-of select="." />
-                        </td>
+                        <th>Język</th>
+                        <th>Ilość</th>
                     </tr>
-                </xsl:for-each>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <xsl:for-each select="ilość-książek/język/*">
+                        <tr>
+                            <td>
+                                <xsl:value-of select="name(.)" />
+                            </td>
+                            <td>
+                                <xsl:value-of select="." />
+                            </td>
+                        </tr>
+                    </xsl:for-each>
+                </tbody>
+            </table>
+            
+            <table class="table-small">
+                <caption>Liczby książek z poszczególnych działów</caption>
+                <thead>
+                    <tr>
+                        <th>Język</th>
+                        <th>Ilość</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <xsl:for-each select="ilość-książek/dział/*">
+                        <tr>
+                            <td>
+                                <xsl:value-of select="name(.)" />
+                            </td>
+                            <td>
+                                <xsl:value-of select="." />
+                            </td>
+                        </tr>
+                    </xsl:for-each>
+                </tbody>
+            </table>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>

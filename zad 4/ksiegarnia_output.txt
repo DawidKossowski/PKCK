@@ -47,7 +47,7 @@ Autorzy:	Fiodor Dostojewski
 Język:		Niemiecki
 Dział:		Literatura
 Rok wydania: 	2014
-Cena:		zł gr
+Cena:		84zł 00gr
 
 	Pierwszy śnieg
 Status		dostępna
@@ -63,7 +63,7 @@ Autorzy:	Thomas Cormen
 Język:		Polski
 Dział:		Naukowe
 Rok wydania: 	2017
-Cena:		30zł 00gr
+Cena:		90zł 00gr
 
 	Statystyka
 Status		dostępna
@@ -79,7 +79,7 @@ Autorzy:	Tove Jansson
 Język:		Polski
 Dział:		Podręczniki
 Rok wydania: 	2017
-Cena:		12zł 00gr
+Cena:		36zł 00gr
 
 	Storyfun for Starters 1
 Status		dostępna
@@ -111,7 +111,7 @@ Autorzy:	Maria Bosowicz
 Język:		Polski
 Dział:		Dziecięce
 Rok wydania: 	2013
-Cena:		zł gr
+Cena:		42zł 00gr
 
 	Strażak Sam
 Status		dostępna
@@ -127,7 +127,7 @@ Autorzy:	Praca zbiorowa
 Język:		Angielski
 Dział:		Dziecięce
 Rok wydania: 	2014
-Cena:		4zł 00gr
+Cena:		12zł 00gr
 
 	Ordynacja Podatkowa NIP 2018
 Status		dostępna
@@ -151,7 +151,7 @@ Autorzy:	Piotr Maroński
 Język:		Polski
 Dział:		Czasopisma
 Rok wydania: 	2018
-Cena:		zł gr
+Cena:		126zł 00gr
 
 	Kajko i Kokosz
 Status		dostępna
@@ -159,7 +159,7 @@ Autorzy:	Praca zbiorowa
 Język:		Niemiecki
 Dział:		Komiksy
 Rok wydania: 	2013
-Cena:		zł gr
+Cena:		294zł 00gr
 
 	Avengers i X-Men
 Status		niedostępna
@@ -167,7 +167,7 @@ Autorzy:	Adam Kubert    Francis Yu
 Język:		Angielski
 Dział:		Komiksy
 Rok wydania: 	2017
-Cena:		10zł 00gr
+Cena:		30zł 00gr
 
 	Daredevil
 Status		dostępna
@@ -199,4 +199,10 @@ Po polsku 	14
 Po angielsku 	4
 Po niemiecku 	2
 
+Literatura 	5
+Naukowe 	2
+Podręczniki 	4
+Dziecięce 	3
+Czasopisma 	3
+Komiksy 	3
 Działy 		6

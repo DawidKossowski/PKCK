@@ -321,6 +321,14 @@
             <angielski>4</angielski>
             <niemiecki>2</niemiecki>
          </język>
+         <dział>
+            <literatura>5</literatura>
+            <naukowe>2</naukowe>
+            <podręczniki>4</podręczniki>
+            <dziecięce>3</dziecięce>
+            <czasopisma>3</czasopisma>
+            <komiksy>3</komiksy>
+         </dział>
       </ilość-książek>
       <ilość-działów>6</ilość-działów>
    </statystyki>

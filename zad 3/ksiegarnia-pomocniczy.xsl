@@ -138,6 +138,26 @@
                     <xsl:value-of select="count(//książka[język='Niemiecki'])"/>
                 </niemiecki>
             </język>
+            <dział>
+                <literatura>
+                    <xsl:value-of select="count(//książka[dział/@id='D1'])"/>
+                </literatura>
+                <naukowe>
+                    <xsl:value-of select="count(//książka[dział/@id='D2'])"/>
+                </naukowe>
+                <podręczniki>
+                    <xsl:value-of select="count(//książka[dział/@id='D3'])"/>
+                </podręczniki>
+                <dziecięce>
+                    <xsl:value-of select="count(//książka[dział/@id='D4'])"/>
+                </dziecięce>
+                <czasopisma>
+                    <xsl:value-of select="count(//książka[dział/@id='D5'])"/>
+                </czasopisma>
+                <komiksy>
+                    <xsl:value-of select="count(//książka[dział/@id='D6'])"/>
+                </komiksy>
+            </dział>
         </ilość-książek>
         <ilość-działów>
             <xsl:value-of select="count(//definicja-działu)"/>

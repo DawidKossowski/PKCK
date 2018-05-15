@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-    <xsl:output method="text"/>
+    <xsl:output indent="yes" method="text"/>
     
     <xsl:template match="text()">
         <xsl:if test="normalize-space(.)">
@@ -89,6 +89,12 @@
         <xsl:value-of select="concat('Po polsku ', '&#x9;', ./język/polski, '&#xA;')" />
         <xsl:value-of select="concat('Po angielsku ', '&#x9;', ./język/angielski, '&#xA;')" />
         <xsl:value-of select="concat('Po niemiecku ', '&#x9;', ./język/niemiecki, '&#xA;&#xA;')" />
+        <xsl:value-of select="concat('Literatura ', '&#x9;', ./dział/literatura, '&#xA;')" />
+        <xsl:value-of select="concat('Naukowe ', '&#x9;', ./dział/naukowe, '&#xA;')" />
+        <xsl:value-of select="concat('Podręczniki ', '&#x9;', ./dział/podręczniki, '&#xA;')" />
+        <xsl:value-of select="concat('Dziecięce ', '&#x9;', ./dział/dziecięce, '&#xA;')" />
+        <xsl:value-of select="concat('Czasopisma ', '&#x9;', ./dział/czasopisma, '&#xA;')" />
+        <xsl:value-of select="concat('Komiksy ', '&#x9;', ./dział/komiksy, '&#xA;')" />
     </xsl:template>
     
 
