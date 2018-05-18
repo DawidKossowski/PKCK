@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" font-family="Consolas"><desc>Dane o księgarni</desc><title>Księgarnia</title><defs><linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:rgb(255, 204, 153);stop-opacity:1"/><stop offset="100%" style="stop-color:rgb(255, 153, 51);stop-opacity:1"/></linearGradient></defs><rect width="1280" height="720" fill="url(#gradient1)"/><text x="50%" y="30" font-size="20" fill="black" text-anchor="middle">
+                Księgarnia
+            </text><a xlink:href="wynikowy.pdf" target="_blank"><g class="btn" cursor="pointer"><rect x="1160" y="680" width="100" height="25" fill="#ffcc99" stroke="black"/><text x="1188" y="697" fill="black" font-size="16">PDF</text></g></a><script type="text/ecmascript">
+                
+                    function onMouseOverContracts(evt, name) {
+                        var numbers = document.getElementById(name);
+                        numbers.setAttribute("visibility", "visible");
+                    }
+                
+            </script><script type="text/ecmascript">
+                
+                    function onMouseOutContracts(evt, name) {
+                        var numbers = document.getElementById(name);
+                        numbers.setAttribute("visibility", "hidden");
+                    }
+                
+            </script><script type="text/ecmascript">
+                
+                    function onClickAuthors(evt) {
+                        var authors = document.getElementById("authors");
+                        var visibility = authors.getAttribute("visibility");
+                        if(visibility === "visible") {
+                            authors.setAttribute("visibility", "hidden");
+                        } else {
+                            authors.setAttribute("visibility", "visible");
+                        }
+                    }
+                
+            </script>
+    <g id="authors-main" class="btn" onclick="onClickAuthors(evt)" cursor="pointer"><rect x="20" y="680" width="100" height="25" fill="#ffcc99" stroke="black"/><text x="35" y="697" fill="black" font-size="16">Autorzy</text></g><g id="authors" visibility="hidden"><rect x="135" y="680" width="550" height="25" fill="#ffcc99" stroke="black"/>
+      <text x="150" y="697" fill="black" font-size="16">Szymon Cytrowski (203863)</text>
+      <text x="438" y="697" fill="black" font-size="16">Dawid Kossowski (203908)</text>
+   </g>
+
+    
+      
+         Pan Tadeusz
+         
+            
+                    Adam
+                    Mickiewicz
+                
+         
+         Polski
+         Literatura
+         1996
+         54.99
+      
+      
+         Ogniem i mieczem
+         
+            
+                    Henryk
+                    Sienkiewicz
+                
+         
+         Polski
+         Literatura
+         1945
+         70.00
+      
+      
+         Algebra
+         
+            
+                    Andrzej
+                    Białynicki
+                
+         
+         Polski
+         Literatura
+         2017
+         43.60
+      
+      
+         Bracia Karmazow
+         
+            
+                    Fiodor
+                    Dostojewski
+                
+         
+         Niemiecki
+         Literatura
+         2014
+         84.00
+      
+      
+         Pierwszy śnieg
+         
+            
+                    Iwona
+                    Zimnicka
+                
+         
+         Polski
+         Literatura
+         2017
+         35.00
+      
+      
+         Wprowadzenie do algorytmów
+         
+            
+                    Thomas
+                    Cormen
+                
+         
+         Polski
+         Naukowe
+         2017
+         90.00
+      
+      
+         Statystyka
+         
+            
+                    Mieczysław
+                    Sobczyk
+                
+         
+         Polski
+         Naukowe
+         2011
+         35.00
+      
+      
+         Muminki - księga I
+         
+            
+                    Tove
+                    Jansson
+                
+         
+         Polski
+         Podręczniki
+         2017
+         36.00
+      
+      
+         Storyfun for Starters 1
+         
+            
+                    Karen
+                    Saxby
+                
+         
+         Angielski
+         Podręczniki
+         2017
+         54.45
+      
+      
+         Angielski na obcasach
+         
+            
+                    Gabriela
+                    Oberda
+                
+            
+                    Julian
+                    Zamorski
+                
+         
+         Polski
+         Podręczniki
+         2016
+         24.94
+      
+      
+         Słownik idiomów angielskich
+         
+            
+                    Anna
+                    Strzeszewska
+                
+         
+         Polski
+         Podręczniki
+         2017
+         9.90
+      
+      
+         Nowe przygody Bolka i Lolka
+         
+            
+                    Maria
+                    Bosowicz
+                
+         
+         Polski
+         Dziecięce
+         2013
+         42.00
+      
+      
+         Strażak Sam
+         Praca zbiorowa
+         Polski
+         Dziecięce
+         2011
+         7.00
+      
+      
+         Hello Kitty i przyjaciele
+         Praca zbiorowa
+         Angielski
+         Dziecięce
+         2014
+         12.00
+      
+      
+         Ordynacja Podatkowa NIP 2018
+         Praca zbiorowa
+         Polski
+         Czasopisma
+         2018
+         27.18
+      
+      
+         Wieś i rolnictwo
+         
+            
+                    Mateusz
+                    Kranicki
+                
+            
+                    Janusz
+                    Wiechno
+                
+         
+         Polski
+         Czasopisma
+         2017
+         15.00
+      
+      
+         Studia Genealogiczne
+         
+            
+                    Piotr
+                    Maroński
+                
+         
+         Polski
+         Czasopisma
+         2018
+         126.00
+      
+      
+         Kajko i Kokosz
+         Praca zbiorowa
+         Niemiecki
+         Komiksy
+         2013
+         294.00
+      
+      
+         Avengers i X-Men
+         
+            
+                    Adam
+                    Kubert
+                
+            
+                    Francis
+                    Yu
+                
+         
+         Angielski
+         Komiksy
+         2017
+         30.00
+      
+      
+         Daredevil
+         
+            
+                    Alex
+                    Maleev
+                
+            
+                    David
+                    Mack
+                
+            
+                    Terry
+                    Dodson
+                
+         
+         Angielski
+         Komiksy
+         2014
+         77.19
+      
+   
+
+    
+      
+         D1
+         Literatura
+      
+      
+         D2
+         Naukowe
+      
+      
+         D3
+         Podręczniki
+      
+      
+         D4
+         Dziecięce
+      
+      
+         D5
+         Czasopisma
+      
+      
+         D6
+         Komiksy
+      
+   
+   
+      
+         20
+         2
+         <g id="conrect" onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" onmouseout="onMouseOutContracts(evt, 'numbersForContracts')"><rect x="340" y="60" width="600" height="250" fill="#ffcc99" stroke="black"/><text x="50%" y="80" fill="black" text-anchor="middle">Książki w danym języku</text><text x="40%" y="300" fill="black" text-anchor="middle">Polski</text><text x="50%" y="300" fill="black" text-anchor="middle">Angielski</text><text x="60%" y="300" fill="black" text-anchor="middle">Niemiecki</text></g><g id="numbersForContracts" visibility="hidden"><text x="508" y="135" fill="black" font-size="16">14</text><text x="633" y="185" fill="black" font-size="16">4</text><text x="758" y="195" fill="black" font-size="16">2</text></g><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="490" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="270" to="165" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="105" dur="5s" fill="freeze"/></rect><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="615" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="270" to="240" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="30" dur="5s" fill="freeze"/></rect><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="740" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="270" to="255" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="15" dur="5s" fill="freeze"/></rect>
+         <g id="emprect" onmouseover="onMouseOverContracts(evt, 'numbersForEmployments')" onmouseout="onMouseOutContracts(evt, 'numbersForEmployments')"><rect x="240" y="360" width="800" height="250" fill="#ffcc99" stroke="black"/><text x="50%" y="380" fill="black" text-anchor="middle">Książki w danym dziale</text><text x="25%" y="600" fill="black" text-anchor="middle">Literatura</text><text x="35%" y="600" fill="black" text-anchor="middle">Naukowe</text><text x="45%" y="600" fill="black" text-anchor="middle">Podręczniki</text><text x="55%" y="600" fill="black" text-anchor="middle">Dziecięce</text><text x="65%" y="600" fill="black" text-anchor="middle">Czasopisma</text><text x="75%" y="600" fill="black" text-anchor="middle">Komiksy</text></g><g id="numbersForEmployments" visibility="hidden"><text x="318" y="480" fill="black" font-size="16">5</text><text x="443" y="495" fill="black" font-size="16">2</text><text x="568" y="485" fill="black" font-size="16">4</text><text x="693" y="490" fill="black" font-size="16">3</text><text x="818" y="490" fill="black" font-size="16">3</text><text x="943" y="490" fill="black" font-size="16">3</text></g><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="300" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="570" to="532.5" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="37.5" dur="5s" fill="freeze"/></rect><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="425" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="570" to="555" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="15" dur="5s" fill="freeze"/></rect><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="550" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="570" to="540" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="30" dur="5s" fill="freeze"/></rect><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="675" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="570" to="547.5" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="22.5" dur="5s" fill="freeze"/></rect><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="800" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="570" to="547.5" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="22.5" dur="5s" fill="freeze"/></rect><rect onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" x="925" width="50" height="300" fill="#ff3300"><animate attributeName="y" from="570" to="547.5" dur="5s" fill="freeze"/><animate attributeName="height" from="1" to="22.5" dur="5s" fill="freeze"/></rect>
+      
+      6
+   
+</svg>
