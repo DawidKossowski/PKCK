@@ -107,7 +107,7 @@
     </xsl:template>
     
     <xsl:template match="/księgarnia/statystyki/ilość-książek/język">
-        <g id="conrect" onmouseover="onMouseOverContracts(evt, 'numbersForContracts')" onmouseout="onMouseOutContracts(evt, 'numbersForContracts')">
+        <g id="conrect" onmouseover="onMouseOverContracts(evt, 'booksInLanguage')" onmouseout="onMouseOutContracts(evt, 'booksInLanguage')">
             <rect x="340" y="60" width="600" height="250" fill="#ffcc99" stroke="black" />
             
             <text x="50%" y="80" fill="black" text-anchor="middle">Książki w danym języku</text>
@@ -116,56 +116,16 @@
             <text x="60%" y="300" fill="black" text-anchor="middle">Niemiecki</text>
         </g>
         
-        <g id="numbersForContracts" visibility="hidden" >
-            <xsl:for-each select="*">
-                <text>
-                    <xsl:attribute name="x">
-                        <xsl:variable name="myposition" select="position()-1" />
-                        <xsl:value-of select="(125*$myposition)+508"/>
-                    </xsl:attribute>
-                    <xsl:attribute name="y">
-                        <xsl:variable name="mycount" select="."/>
-                        <xsl:value-of select="205-($mycount*5)"/>
-                    </xsl:attribute>
-                    <xsl:attribute name="fill">
-                        <xsl:text>black</xsl:text>
-                    </xsl:attribute>
-                    <xsl:attribute name="font-size">
-                        <xsl:text>16</xsl:text>
-                    </xsl:attribute>
-                    <xsl:value-of select="."/>
-                </text>
-            </xsl:for-each>
-        </g>
-        
-        <xsl:for-each select="*">
-            <rect>
-                <xsl:attribute name="onmouseover">
-                    <xsl:text>onMouseOverContracts(evt, 'numbersForContracts')</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="x">
-                    <xsl:variable name="mypos" select="position()-1"/>
-                    <xsl:value-of select="(125*$mypos)+490"/>
-                </xsl:attribute>
-                <xsl:attribute name="width">
-                    <xsl:text>50</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="height">
-                    <xsl:text>300</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="fill">
-                    <xsl:text>#ff3300</xsl:text>
-                </xsl:attribute>
-                <xsl:variable name="mycount" select="."/>
-                <animate attributeName="y" from="270" to="{270-$mycount*7.5}" dur="5s" fill="freeze"/>
-                <animate attributeName="height" from="1" to="{$mycount*7.5}" dur="5s" fill="freeze"/>
-            </rect>
-        </xsl:for-each>
+        <xsl:call-template name="wykres">
+            <xsl:with-param name="id" select="'booksInLanguage'"/>
+            <xsl:with-param name="xPos" select="'508'"/>
+            <xsl:with-param name="yPos" select="'205'"/>
+        </xsl:call-template>
         
     </xsl:template>
     
     <xsl:template match="/księgarnia/statystyki/ilość-książek/dział">
-        <g id="emprect" onmouseover="onMouseOverContracts(evt, 'numbersForEmployments')" onmouseout="onMouseOutContracts(evt, 'numbersForEmployments')">
+        <g id="emprect" onmouseover="onMouseOverContracts(evt, 'booksInSection')" onmouseout="onMouseOutContracts(evt, 'booksInSection')">
             <rect x="240" y="360" width="800" height="250" fill="#ffcc99" stroke="black" />
             
             <text x="50%" y="380" fill="black" text-anchor="middle">Książki w danym dziale</text>
@@ -177,16 +137,33 @@
             <text x="75%" y="600" fill="black" text-anchor="middle">Komiksy</text>
         </g>
         
-        <g id="numbersForEmployments" visibility="hidden" >
+        <xsl:call-template name="wykres">
+            <xsl:with-param name="id" select="'booksInSection'"/>
+            <xsl:with-param name="xPos" select="'318'"/>
+            <xsl:with-param name="yPos" select="'505'"/>
+        </xsl:call-template>
+        
+    </xsl:template>
+    
+    
+    <xsl:template name="wykres">
+        <xsl:param name="id"/>
+        <xsl:param name="xPos"/>
+        <xsl:param name="yPos"/>
+        
+        <g visibility="hidden" >
+            <xsl:attribute name="id">
+                <xsl:value-of select="$id" />
+            </xsl:attribute>
             <xsl:for-each select="*">
                 <text>
                     <xsl:attribute name="x">
                         <xsl:variable name="myposition" select="position()-1" />
-                        <xsl:value-of select="(125*$myposition)+318"/>
+                        <xsl:value-of select="(125*$myposition)+$xPos"/>
                     </xsl:attribute>
                     <xsl:attribute name="y">
                         <xsl:variable name="mycount" select="."/>
-                        <xsl:value-of select="505-($mycount*5)"/>
+                        <xsl:value-of select="($yPos)-($mycount*5)"/>
                     </xsl:attribute>
                     <xsl:attribute name="fill">
                         <xsl:text>black</xsl:text>
@@ -200,30 +177,25 @@
         </g>
         
         <xsl:for-each select="*">
-            <rect>
+            <rect transform="translate(0, {$yPos+70}) scale(1, -1)" >
                 <xsl:attribute name="onmouseover">
-                    <xsl:text>onMouseOverContracts(evt, 'numbersForContracts')</xsl:text>
+                    <xsl:variable name="apostrophe">'</xsl:variable>
+                    <xsl:value-of select="concat('onMouseOverContracts(evt, ', $apostrophe, $id, $apostrophe, ')')" />
                 </xsl:attribute>
                 <xsl:attribute name="x">
                     <xsl:variable name="mypos" select="position()-1"/>
-                    <xsl:value-of select="(125*$mypos)+300"/>
+                    <xsl:value-of select="(125*$mypos)+$xPos+(-18)"/>
                 </xsl:attribute>
                 <xsl:attribute name="width">
                     <xsl:text>50</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="height">
-                    <xsl:text>300</xsl:text>
                 </xsl:attribute>
                 <xsl:attribute name="fill">
                     <xsl:text>#ff3300</xsl:text>
                 </xsl:attribute>
                 <xsl:variable name="mycount" select="."/>
-                <animate attributeName="y" from="570" to="{570-$mycount*7.5}" dur="5s" fill="freeze"/>
-                <animate attributeName="height" from="1" to="{$mycount*7.5}" dur="5s" fill="freeze"/>
+                <animate attributeName="height" from="0" to="{$mycount*7.5}" dur="2s" fill="freeze" />
             </rect>
         </xsl:for-each>
     </xsl:template>
-    
-    
 
 </xsl:stylesheet>
