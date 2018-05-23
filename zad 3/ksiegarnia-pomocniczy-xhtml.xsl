@@ -216,50 +216,44 @@
         </p>
         
         <div class="table-container">
-            <table class="table-small">
-                <caption>Liczby książek w poszczególnych językach</caption>
-                <thead>
-                    <tr>
-                        <th>Język</th>
-                        <th>Ilość</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <xsl:for-each select="ilość-książek/język/*">
-                        <tr>
-                            <td>
-                                <xsl:value-of select="name(.)" />
-                            </td>
-                            <td>
-                                <xsl:value-of select="." />
-                            </td>
-                        </tr>
-                    </xsl:for-each>
-                </tbody>
-            </table>
-            
-            <table class="table-small">
-                <caption>Liczby książek z poszczególnych działów</caption>
-                <thead>
-                    <tr>
-                        <th>Język</th>
-                        <th>Ilość</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <xsl:for-each select="ilość-książek/dział/*">
-                        <tr>
-                            <td>
-                                <xsl:value-of select="name(.)" />
-                            </td>
-                            <td>
-                                <xsl:value-of select="." />
-                            </td>
-                        </tr>
-                    </xsl:for-each>
-                </tbody>
-            </table>
+            <xsl:call-template name="stat-table">
+                <xsl:with-param name="caption" select="'Liczby książek w poszczególnych językach'" />
+                <xsl:with-param name="content" select="ilość-książek/język" />
+            </xsl:call-template>
+
+            <xsl:call-template name="stat-table">
+                <xsl:with-param name="caption" select="'Liczby książek z poszczególnych działów'" />
+                <xsl:with-param name="content" select="ilość-książek/dział" />
+            </xsl:call-template>
         </div>
+    </xsl:template>
+    
+    
+    <xsl:template name="stat-table">
+        <xsl:param name="caption" />
+        <xsl:param name="content" />
+        
+        <table class="table-small">
+            <caption><xsl:value-of select="$caption" /></caption>
+            <thead>
+                <tr>
+                    <th>Język</th>
+                    <th>Ilość</th>
+                </tr>
+            </thead>
+            <tbody>
+                <xsl:for-each select="$content/*">
+                    <tr>
+                        <td>
+                            <xsl:value-of select="name(.)" />
+                        </td>
+                        <td>
+                            <xsl:value-of select="." />
+                        </td>
+                    </tr>
+                </xsl:for-each>
+            </tbody>
+        </table>
     </xsl:template>
 
 </xsl:stylesheet>
