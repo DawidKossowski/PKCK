@@ -12,33 +12,33 @@
    <fo:page-sequence master-reference="default">
       <fo:flow flow-name="xsl-region-body">
          <fo:list-block>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>Imię: </fo:block>
+                  <fo:block>Imię</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em" font-weight="bold">Szymon</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>Nazwisko: </fo:block>
+                  <fo:block>Nazwisko</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em" font-weight="bold">Cytrowski</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>Semestr: </fo:block>
+                  <fo:block>Semestr</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">VI</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>Indeks: </fo:block>
+                  <fo:block>Indeks</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">203863</fo:block>
@@ -49,37 +49,37 @@
                   <fo:block>Kontakt: </fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
-                  <fo:block margin-left="15em">203863@edu.p.lodz.pl</fo:block>
-                  <fo:block margin-left="15em">321-321-321</fo:block>
+                  <fo:block margin-left="15em" font-style="italic">203863@edu.p.lodz.pl</fo:block>
+                  <fo:block margin-left="15em" font-style="italic">321-321-321</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>Imię: </fo:block>
+                  <fo:block>Imię</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em" font-weight="bold">Dawid</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>Nazwisko: </fo:block>
+                  <fo:block>Nazwisko</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em" font-weight="bold">Kossowski</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>Semestr: </fo:block>
+                  <fo:block>Semestr</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">VI</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>Indeks: </fo:block>
+                  <fo:block>Indeks</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">203908</fo:block>
@@ -90,17 +90,17 @@
                   <fo:block>Kontakt: </fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
-                  <fo:block margin-left="15em">203908@edu.p.lodz.pl</fo:block>
-                  <fo:block margin-left="15em">123-123-123</fo:block>
+                  <fo:block margin-left="15em" font-style="italic">203908@edu.p.lodz.pl</fo:block>
+                  <fo:block margin-left="15em" font-style="italic">123-123-123</fo:block>
                </fo:list-item-body>
             </fo:list-item>
          </fo:list-block>
 
-         <fo:block margin-bottom="3mm">Lista książek</fo:block>
+         <fo:block margin-bottom="3mm" font-size="15pt">Lista książek</fo:block>
          <fo:table>
             <fo:table-header>
-               <fo:table-row>
-                  <fo:table-cell font-weight="bold" border="solid 1px black">
+               <fo:table-row background-color="lightblue">&gt;
+                    <fo:table-cell font-weight="bold" border="solid 1px black">
                      <fo:block>Tytuł</fo:block>
                   </fo:table-cell>
                   <fo:table-cell font-weight="bold" border="solid 1px black">
@@ -624,7 +624,7 @@
             </fo:table-body>
          </fo:table>
 
-         <fo:block margin-bottom="3mm" margin-top="20mm">Działy</fo:block>
+         <fo:block margin-bottom="3mm" margin-top="25mm" font-size="15pt">Działy</fo:block>
          <fo:table width="5cm">
             <fo:table-header>
                <fo:table-row>
@@ -638,132 +638,148 @@
             </fo:table-header>
             <fo:table-body>
                <fo:table-row border-top="1px solid black">
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>D1</fo:block>
                   </fo:table-cell>
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>Literatura</fo:block>
                   </fo:table-cell>
                </fo:table-row>
                <fo:table-row border-top="1px solid black">
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>D2</fo:block>
                   </fo:table-cell>
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>Naukowe</fo:block>
                   </fo:table-cell>
                </fo:table-row>
                <fo:table-row border-top="1px solid black">
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>D3</fo:block>
                   </fo:table-cell>
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>Podręczniki</fo:block>
                   </fo:table-cell>
                </fo:table-row>
                <fo:table-row border-top="1px solid black">
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>D4</fo:block>
                   </fo:table-cell>
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>Dziecięce</fo:block>
                   </fo:table-cell>
                </fo:table-row>
                <fo:table-row border-top="1px solid black">
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>D5</fo:block>
                   </fo:table-cell>
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>Czasopisma</fo:block>
                   </fo:table-cell>
                </fo:table-row>
                <fo:table-row border-top="1px solid black">
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>D6</fo:block>
                   </fo:table-cell>
-                  <fo:table-cell>
+                  <fo:table-cell padding-top="2mm" padding-bottom="2mm">
                      <fo:block>Komiksy</fo:block>
                   </fo:table-cell>
                </fo:table-row>
             </fo:table-body>
          </fo:table>
-         <fo:block margin-bottom="3mm" margin-top="20mm">Statystyki</fo:block>
+         <fo:block margin-bottom="3mm" page-break-before="always" font-size="15pt">Statystyki</fo:block>
          <fo:list-block>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt" margin-top="2pt">
                <fo:list-item-label>
-                  <fo:block font-weight="bold">Wartosc: </fo:block>
+                  <fo:block font-weight="bold">Ksiazki w kategorii </fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em" font-weight="bold">Ilosc</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>polski</fo:block>
+                  <fo:block>Wszystkie</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">20</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item margin-bottom="2pt">
+               <fo:list-item-label>
+                  <fo:block>Bieżacy-rok</fo:block>
+               </fo:list-item-label>
+               <fo:list-item-body>
+                  <fo:block margin-left="15em">2</fo:block>
+               </fo:list-item-body>
+            </fo:list-item>
+            <fo:list-item margin-bottom="2pt">
+               <fo:list-item-label>
+                  <fo:block>Polski</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">14</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>angielski</fo:block>
+                  <fo:block>Angielski</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">4</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>niemiecki</fo:block>
+                  <fo:block>Niemiecki</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">2</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>literatura</fo:block>
+                  <fo:block>Literatura</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">5</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>naukowe</fo:block>
+                  <fo:block>Naukowe</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">2</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>podręczniki</fo:block>
+                  <fo:block>Podręczniki</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">4</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>dziecięce</fo:block>
+                  <fo:block>Dziecięce</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">3</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>czasopisma</fo:block>
+                  <fo:block>Czasopisma</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">3</fo:block>
                </fo:list-item-body>
             </fo:list-item>
-            <fo:list-item>
+            <fo:list-item margin-bottom="2pt">
                <fo:list-item-label>
-                  <fo:block>komiksy</fo:block>
+                  <fo:block>Komiksy</fo:block>
                </fo:list-item-label>
                <fo:list-item-body>
                   <fo:block margin-left="15em">3</fo:block>
