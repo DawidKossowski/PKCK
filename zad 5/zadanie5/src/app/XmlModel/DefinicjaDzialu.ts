@@ -1,9 +1,11 @@
 export class DefinicjaDzialu {
-  id: string;
-  name: string;
+  public id: string;
+  public nazwa: string;
+  public type: string;
 
   constructor(id, name) {
     this.id = id;
-    this.name = name;
+    this.nazwa = name;
+    this.type = 'definicja-działu';
   }
 }

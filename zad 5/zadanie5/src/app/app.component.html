@@ -1,14 +1,14 @@
 <div>
-  <input type="file" id="files" name="file" (change)="openFile($event)" />
-  <p>{{ksiegarnia !== undefined}}</p>
+  <input type="file" id="files" name="file" (change)="loadXmlFile($event)" />
 </div>
 
-<div *ngIf="ksiegarnia !== undefined">
+<div *ngIf="ksiegarnia">
   <div *ngFor="let dzial of ksiegarnia.dzialy.definicjaDzialu">
     <p>
-      <span>{{dzial.id}}  {{dzial.name}}</span>
-      <button (click)="test(dzial)">Change name</button>
+      <span>{{dzial.id}}  {{dzial.nazwa}}</span>
     </p>
   </div>
-  <button (click)="download()">Sciagaj to kuwra</button>
+  <button (click)="downloadActual()">Sciagaj to kuwra</button>
 </div>
+
+<input type="file" id="xslt" name="file" (change)="loadXsltFile($event)" />
