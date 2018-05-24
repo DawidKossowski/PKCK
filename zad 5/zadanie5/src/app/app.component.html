@@ -1,0 +1,14 @@
+<div>
+  <input type="file" id="files" name="file" (change)="openFile($event)" />
+  <p>{{ksiegarnia !== undefined}}</p>
+</div>
+
+<div *ngIf="ksiegarnia !== undefined">
+  <div *ngFor="let dzial of ksiegarnia.dzialy.definicjaDzialu">
+    <p>
+      <span>{{dzial.id}}  {{dzial.name}}</span>
+      <button (click)="test(dzial)">Change name</button>
+    </p>
+  </div>
+  <button (click)="download()">Sciagaj to kuwra</button>
+</div>
