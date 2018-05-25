@@ -17,11 +17,11 @@ export class FileService {
     FileSaver.saveAs(blob, fileName);
   }
 
-  transformToXhtml(xsltFile, xmlFile) {
+  transformToXhtml(xsltFile, xmlFile, fileName) {
     const xsltProcessor = new XSLTProcessor();
     xsltProcessor.importStylesheet(xsltFile);
     const result = xsltProcessor.transformToDocument(xmlFile);
 
-    this.downloadFile(result.documentElement.outerHTML, 'text/xhtml', 'xslt.xhtml');
+    this.downloadFile(result.documentElement.outerHTML, 'text/xhtml', fileName);
   }
 }

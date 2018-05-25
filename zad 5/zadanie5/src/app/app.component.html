@@ -1,14 +1,25 @@
-<div>
-  <input type="file" id="files" name="file" (change)="loadXmlFile($event)" />
-</div>
-
-<div *ngIf="ksiegarnia">
-  <div *ngFor="let dzial of ksiegarnia.dzialy.definicjaDzialu">
-    <p>
-      <span>{{dzial.id}}  {{dzial.nazwa}}</span>
-    </p>
+<div class="container mt-3">
+  <h1>Zadanie 5</h1>
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h4>Załaduj plik XML</h4>
+      <input class="btn btn-secondary btn-lg" type="file" id="files" name="file" (change)="loadXmlFile($event)" />
+    </div>
+    <div class="col-md-6">
+      <app-transform [xmlFile]="xmlFile"></app-transform>
+    </div>
   </div>
-  <button (click)="downloadActual()">Sciagaj to kuwra</button>
-</div>
 
-<input type="file" id="xslt" name="file" (change)="loadXsltFile($event)" />
+  <div *ngIf="ksiegarnia">
+    <button class="btn btn-danger mb-3" (click)="downloadActual()">Download XML document</button>
+    <p>księgarnia</p>
+    <!--<app-content [contents]="ksiegarnia.tworcy"></app-content>
+    <app-content [contents]="ksiegarnia.ksiazki"></app-content>
+    <app-content [contents]="ksiegarnia.dzialy"></app-content>-->
+
+    <app-books-content [content]="ksiegarnia.ksiazki"></app-books-content>
+    <app-creator-content [content]="ksiegarnia.tworcy"></app-creator-content>
+    <app-department-content [content]="ksiegarnia.dzialy"></app-department-content>
+  </div>
+
+</div>

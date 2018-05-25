@@ -7,7 +7,7 @@ export class Ksiazki {
 
   constructor(ksiazki) {
     this.ksiazki = ksiazki['książka']
-      .map(e => new Ksiazka(e['@attributes'].id, e['@attributes'].dostępna, e['tytuł'], e['język'], e['dział'], e['rok-wydania'], e['cena']));
+      .map(e => new Ksiazka(e['@attributes'].id, e['@attributes'].dostępna, e['tytuł'], e['autorzy'], e['język'], e['dział'], e['rok-wydania'], e['cena']));
     this.type = 'książki';
   }
 }

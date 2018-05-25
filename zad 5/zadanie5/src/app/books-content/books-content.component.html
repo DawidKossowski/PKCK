@@ -1,0 +1,132 @@
+<div class="ml-10">
+  <div>
+    <button class="btn btn-link p-0 pb-1">+</button>
+    <p class="d-inline-block p-1">{{content['type']}}</p>
+  </div>
+  <ng-container *ngFor="let c of content.ksiazki; let idx=index">
+    <div *ngIf="c" class="ml-10 mb-2">
+      <button class="btn btn-link p-0 pb-1">+</button>
+      <p class="d-inline-block p-1">{{c.type}}</p>
+      <button (click)="delete(idx)">Delete</button>
+      <button (click)="add()">Add</button>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>@{{c['id']['type']}}</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['id']['value']"/>
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>@{{c['dostepna']['type']}}</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['dostepna']['value']"/>
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>tytuł</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['tytuł']"/>
+        </div>
+      </div>
+
+      <div class="row ml-10" *ngIf="c['autorzy']['autorzy'] == 'Praca zbiorowa'">
+        <div class="col-md-1">
+          <label>autorzy</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['autorzy']['autorzy']"/>
+        </div>
+      </div>
+
+      <div class="ml-10" *ngIf="c['autorzy']['autorzy']['imię']">
+        <button class="btn btn-link p-0 pb-1">+</button>
+        <p class="d-inline-block p-1 m-0">autorzy</p>
+        <div class="ml-10">
+          <button class="btn btn-link p-0 pb-1">+</button>
+          <p class="d-inline-block p-1 m-0">autor</p>
+          <div>
+            <div class="row ml-10">
+              <div class="col-md-1">
+                <label>imię</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" [(ngModel)]="c['autorzy']['autorzy']['imię']"/>
+              </div>
+            </div>
+            <div class="row ml-10">
+              <div class="col-md-1">
+                <label>nazwisko</label>
+              </div>
+              <div class="col-md-9">
+                <input type="text" [(ngModel)]="c['autorzy']['autorzy']['nazwisko']"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="c['autorzy']['autorzy'][0] && !(c['autorzy']['autorzy'] == 'Praca zbiorowa')">
+        <button class="btn btn-link p-0 pb-1">+</button>
+        <p class="d-inline-block p-1 m-0">autorzy</p>
+
+        <div *ngFor="let autor of c['autorzy']['autorzy']">
+          <div class="ml-10">
+            <button class="btn btn-link p-0 pb-1">+</button>
+            <p class="d-inline-block p-1 m-0">autor</p>
+            <div>
+              <div class="row ml-10">
+                <div class="col-md-1">
+                  <label>imię</label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" [(ngModel)]="autor['imię']"/>
+                </div>
+              </div>
+              <div class="row ml-10">
+                <div class="col-md-1">
+                  <label>nazwisko</label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" [(ngModel)]="autor['nazwisko']"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>język</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['dział']" />
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>rok-wydania</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['rokWydania']['value']" />
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>cena</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['cena']" />
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

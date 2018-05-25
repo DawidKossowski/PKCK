@@ -25,19 +25,16 @@ export class AppComponent {
 
       const obj = this.ngxXml2jsonService.xmlToJson(xmlDoc);
       this.ksiegarnia = new Księgarnia(obj);
-      console.log(this.ksiegarnia);
-    });
-  }
-
-  public async loadXsltFile(event) {
-    this.fileService.readFile(event.target.files[0], (e: any) => {
-      const xmlDoc = this.parser.parseFromString(e.target.result, 'text/xml');
-      this.fileService.transformToXhtml(xmlDoc, this.xmlFile);
+      localStorage.setItem('ksiegarnia', JSON.stringify(this.ksiegarnia));
     });
   }
 
   public downloadActual() {
     const downloadFile = this.serializeService.objectToXml(this.ksiegarnia);
     this.fileService.downloadFile(downloadFile, 'text/xml', 'export.xml');
+  }
+
+  testing(e) {
+    console.log(e);
   }
 }

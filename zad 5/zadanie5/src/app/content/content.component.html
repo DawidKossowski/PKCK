@@ -1,0 +1,26 @@
+
+<div class="ml-10">
+  <ng-container *ngFor="let e of end">
+    <div *ngIf="e[0] == 'type'">
+      <button class="btn btn-link p-0 pb-1">+</button>
+      <p class="d-inline-block p-1">{{e[1]}}</p>
+      <button class="btn btn-outline-danger ml-2"
+              *ngIf="e[1]=='książka' || e[1]=='twórca' || e[1]=='definicja-działu'"
+              (click)="deleteElement(e)">Delete</button>
+    </div>
+
+    <div *ngIf="e[0] != 'type'" class="ml-10 mb-1 row">
+      <div class="col-md-1">
+        <label>{{e[0]}}</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" class="p-1" [(ngModel)]="e[1]" (change)="valueChange($event, e[0])"/>
+      </div>
+    </div>
+  </ng-container>
+
+
+  <div *ngFor="let department of test">
+    <app-content [contents]="department"></app-content>
+  </div>
+</div>

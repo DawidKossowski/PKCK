@@ -1,0 +1,81 @@
+<div class="ml-10">
+  <div>
+    <button class="btn btn-link p-0 pb-1">+</button>
+    <p class="d-inline-block p-1">{{content['type']}}</p>
+  </div>
+  <ng-container *ngFor="let c of content.tworcy; let idx=index">
+    <div *ngIf="c" class="ml-10 mb-2">
+      <button class="btn btn-link p-0 pb-1">+</button>
+      <p class="d-inline-block p-1">{{c.type}}</p>
+      <button (click)="delete(idx)">Delete</button>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>@{{c['id']['type']}}</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['id']['value']"  />
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>imię</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['imię']"  />
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>nazwisko</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['nazwisko']" />
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>semestr</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['semestr']" />
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>indeks</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['indeks']" />
+        </div>
+      </div>
+      <div class="row ml-10">
+        <div class="col-md-1">
+          <label>nazwisko</label>
+        </div>
+        <div class="col-md-9">
+          <input type="text" [(ngModel)]="c['nazwisko']" />
+        </div>
+      </div>
+      <div class="ml-10">
+        <button class="btn btn-link p-0 pb-1">+</button>
+        <p class="d-inline-block p-1">{{c['kontakt'].type}}</p>
+        <div class="row ml-10">
+          <div class="col-md-1">
+            <label>email</label>
+          </div>
+          <div class="col-md-9">
+            <input type="text" [(ngModel)]="c['kontakt']['email']" />
+          </div>
+        </div>
+        <div class="row ml-10">
+          <div class="col-md-1">
+            <label>telefon</label>
+          </div>
+          <div class="col-md-9">
+            <input type="text" [(ngModel)]="c['kontakt']['telefon']" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -4,7 +4,7 @@ import {Kontakt} from "./Kontakt";
 export class Tworca {
 
   public id: Attribute;
-  public imie:  string;
+  public imię:  string;
   public nazwisko: string;
   public semestr: string;
   public indeks: string;
@@ -13,7 +13,7 @@ export class Tworca {
 
   constructor(id, imie, nazwisko, semestr, indeks, kontakt) {
     this.id = new Attribute(id, 'idTwórcy');
-    this.imie = imie;
+    this.imię = imie;
     this.nazwisko = nazwisko;
     this.semestr = semestr;
     this.indeks = indeks;
