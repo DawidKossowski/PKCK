@@ -25,6 +25,7 @@ export class AppComponent {
 
       const obj = this.ngxXml2jsonService.xmlToJson(xmlDoc);
       this.ksiegarnia = new Księgarnia(obj);
+      console.log(this.ksiegarnia);
     });
   }
 

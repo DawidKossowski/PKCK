@@ -3,7 +3,7 @@ import * as FileSaver from 'file-saver';
 
 @Injectable()
 export class FileService {
-  readFile(file, onLoadCallback){
+  readFile(file, onLoadCallback) {
     const reader = new FileReader();
     reader.onload = onLoadCallback;
     reader.readAsText(file);
