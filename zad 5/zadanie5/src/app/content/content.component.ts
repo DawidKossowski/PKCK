@@ -16,7 +16,6 @@ export class ContentComponent implements OnChanges {
   }*/
 
   ngOnChanges() {
-    console.log('test');
     this.initialize();
   }
 

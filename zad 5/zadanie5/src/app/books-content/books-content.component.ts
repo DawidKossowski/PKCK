@@ -15,6 +15,6 @@ export class BooksContentComponent {
   }
 
   delete(index) {
-
+    delete this.content['ksiazki'][index];
   }
 }

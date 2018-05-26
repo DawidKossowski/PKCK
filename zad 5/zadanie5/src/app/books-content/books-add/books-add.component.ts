@@ -23,6 +23,9 @@ export class BooksAddComponent {
   options = true;
 
   add() {
+    if(this.options) {
+      this.autorzy = 'Praca zbiorowa';
+    }
     const book = new Ksiazka(this.id, this.dostepna, this.tytul, this.autorzy, this.jezyk, this.dzial, this.rokWydania, this.cena);
     this.content['ksiazki'].push(book);
   }
