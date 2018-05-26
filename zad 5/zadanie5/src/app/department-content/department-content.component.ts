@@ -1,15 +1,17 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-department-content',
   templateUrl: './department-content.component.html',
   styleUrls: ['./department-content.component.css']
 })
-export class DepartmentContentComponent implements OnInit {
+export class DepartmentContentComponent {
 
   @Input() content;
+  showAdd = false;
 
-  ngOnInit() {
+  add() {
+    this.showAdd = !this.showAdd;
   }
 
   delete(index) {

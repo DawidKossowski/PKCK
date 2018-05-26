@@ -1,0 +1,17 @@
+<form class="sticky-top" (submit)="add()">
+  <label for="idTworcy">@idTwórcy</label>
+  <input type="text" class="form-control" [(ngModel)]="idTworcy" name="idTworyc" id="idTworcy" />
+  <label for="name">imię</label>
+  <input type="text" class="form-control" [(ngModel)]="imie" name="name" id="name" />
+  <label for="surname">nazwisko</label>
+  <input type="text" class="form-control" [(ngModel)]="nazwisko" name="surname" id="surname" />
+  <label for="name">semestr</label>
+  <input type="text" class="form-control" [(ngModel)]="semestr" name="semestr" id="semestr" />
+  <label for="name">indeks</label>
+  <input type="text" class="form-control" [(ngModel)]="indeks" name="index" id="index" />
+  <label for="name">email</label>
+  <input type="text" class="form-control" [(ngModel)]="email" name="email" id="email" />
+  <label for="name">telefon</label>
+  <input type="text" class="form-control" [(ngModel)]="telefon" name="phone" id="phone" />
+  <button class="btn btn-primary mt-3" type="submit">Dodaj twórce</button>
+</form>

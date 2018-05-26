@@ -1,0 +1,38 @@
+<form class="sticky-top" (submit)="add()">
+  <label for="id">@id</label>
+  <input type="text" class="form-control" [(ngModel)]="id" name="id" id="id" />
+  <label for="avaiable">@dostepna</label>
+  <input type="text" class="form-control" [(ngModel)]="dostepna" name="avaiable" id="avaiable" />
+  <label for="title">tytuł</label>
+  <input type="text" class="form-control" [(ngModel)]="tytul" name="title" id="title" />
+
+  <div>
+    <label><input name="options" [(ngModel)]="options" type="radio" [value]="true" [checked]="options"/> Praca zbiorowa</label>
+    <label><input name="options" class="ml-2"  [(ngModel)]="options" type="radio" [value]="false" [checked]="!options"/> Autorzy</label>
+  </div>
+
+  <div *ngIf="!options">
+    <label for="authorCount">liczba autorow</label>
+    <input type="number" name="authorCount" id="authorCount" min="1"
+           [(ngModel)]="liczbaAutorow" (change)="authorCountChange($event)" />
+    <div *ngIf="liczbaAutorow" class="ml-10">
+      <div *ngFor="let autor of autorzy">
+        <label for="authorName">imię</label>
+        <input type="text" class="form-control" [(ngModel)]="autor['imię']" name="authorName" id="authorName" />
+        <label for="authorSurname">nazwisko</label>
+        <input type="text" class="form-control" [(ngModel)]="autor['nazwisko']" name="authorSurname" id="authorSurname" />
+      </div>
+    </div>
+  </div>
+
+
+  <label for="language">język</label>
+  <input type="text" class="form-control" [(ngModel)]="jezyk" name="language" id="language" />
+  <label for="language">dział</label>
+  <input type="text" class="form-control" [(ngModel)]="dzial" name="department" id="department" />
+  <label for="year">rok-wydania</label>
+  <input type="text" class="form-control" [(ngModel)]="rokWydania" name="year" id="year" />
+  <label for="price">cena</label>
+  <input type="text" class="form-control" [(ngModel)]="cena" name="price" id="price" />
+  <button class="btn btn-primary mt-3" type="submit">Dodaj twórce</button>
+</form>

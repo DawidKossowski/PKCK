@@ -1,15 +1,17 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-creator-content',
   templateUrl: './creator-content.component.html',
   styleUrls: ['./creator-content.component.css']
 })
-export class CreatorContentComponent implements OnInit {
+export class CreatorContentComponent {
 
   @Input() content;
+  showAdd = false;
 
-  ngOnInit() {
+  add() {
+    this.showAdd = !this.showAdd;
   }
 
   delete(index) {

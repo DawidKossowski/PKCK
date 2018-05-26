@@ -10,6 +10,9 @@ import { ContentComponent } from './content/content.component';
 import { DepartmentContentComponent } from './department-content/department-content.component';
 import { CreatorContentComponent } from './creator-content/creator-content.component';
 import { BooksContentComponent } from './books-content/books-content.component';
+import { DepartmentAddComponent } from './department-content/department-add/department-add.component';
+import { CreatorAddComponent } from './creator-content/creator-add/creator-add.component';
+import { BooksAddComponent } from './books-content/books-add/books-add.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { BooksContentComponent } from './books-content/books-content.component';
     ContentComponent,
     DepartmentContentComponent,
     CreatorContentComponent,
-    BooksContentComponent
+    BooksContentComponent,
+    DepartmentAddComponent,
+    CreatorAddComponent,
+    BooksAddComponent
   ],
   imports: [
     BrowserModule,

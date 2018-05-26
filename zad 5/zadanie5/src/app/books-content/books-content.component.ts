@@ -1,23 +1,20 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-books-content',
   templateUrl: './books-content.component.html',
   styleUrls: ['./books-content.component.css']
 })
-export class BooksContentComponent implements OnInit {
+export class BooksContentComponent {
 
   @Input() content;
+  showAdd = false;
 
-  ngOnInit() {
+  add() {
+    this.showAdd = !this.showAdd;
   }
 
   delete(index) {
 
   }
-
-  add() {
-
-  }
-
 }
