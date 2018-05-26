@@ -29,7 +29,11 @@
   <label for="language">język</label>
   <input type="text" class="form-control" [(ngModel)]="jezyk" name="language" id="language" />
   <label for="language">dział</label>
-  <input type="text" class="form-control" [(ngModel)]="dzial" name="department" id="department" />
+  <select class="form-control" [(ngModel)]="dzial" id="department" name="department">
+    <ng-container *ngFor="let dep of departments">
+      <option *ngIf="dep" [ngValue]="dep['nazwa']"> {{dep['nazwa']}} </option>
+    </ng-container>
+  </select>
   <label for="year">rok-wydania</label>
   <input type="text" class="form-control" [(ngModel)]="rokWydania" name="year" id="year" />
   <label for="price">cena</label>

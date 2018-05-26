@@ -13,6 +13,7 @@ import { BooksContentComponent } from './books-content/books-content.component';
 import { DepartmentAddComponent } from './department-content/department-add/department-add.component';
 import { CreatorAddComponent } from './creator-content/creator-add/creator-add.component';
 import { BooksAddComponent } from './books-content/books-add/books-add.component';
+import {LibraryService} from "./services/library.service";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { BooksAddComponent } from './books-content/books-add/books-add.component
     BrowserModule,
     FormsModule
   ],
-  providers: [SerializeService, FileService],
+  providers: [SerializeService, FileService, LibraryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

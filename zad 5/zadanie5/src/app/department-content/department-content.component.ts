@@ -1,21 +1,28 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {LibraryService} from '../services/library.service';
+import {Dzialy} from '../XmlModel/Dzialy';
 
 @Component({
   selector: 'app-department-content',
   templateUrl: './department-content.component.html',
   styleUrls: ['./department-content.component.css']
 })
-export class DepartmentContentComponent {
+export class DepartmentContentComponent implements OnInit {
 
-  @Input() content;
-  showAdd = false;
+  private content: Dzialy;
+  private showAdd = false;
 
-  add() {
+  constructor(private libraryService: LibraryService) {}
+
+  ngOnInit() {
+    this.content = this.libraryService.getDepartments();
+  }
+
+  add(): void {
     this.showAdd = !this.showAdd;
   }
 
-  delete(index) {
+  delete(index): void {
     delete this.content['definicjaDzialu'][index];
   }
-
 }

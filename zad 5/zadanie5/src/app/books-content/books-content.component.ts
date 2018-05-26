@@ -1,20 +1,30 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Ksiazki} from "../XmlModel/Ksiazki";
+import {LibraryService} from "../services/library.service";
 
 @Component({
   selector: 'app-books-content',
   templateUrl: './books-content.component.html',
   styleUrls: ['./books-content.component.css']
 })
-export class BooksContentComponent {
+export class BooksContentComponent implements OnInit {
 
-  @Input() content;
-  showAdd = false;
+  private content: Ksiazki;
+  private departments;
+  private showAdd = false;
 
-  add() {
+  constructor(private libraryService: LibraryService) {}
+
+  ngOnInit() {
+    this.content = this.libraryService.getBooks();
+    this.departments = this.libraryService.getDepartmentsValue();
+  }
+
+  add(): void {
     this.showAdd = !this.showAdd;
   }
 
-  delete(index) {
+  delete(index): void {
     delete this.content['ksiazki'][index];
   }
 }

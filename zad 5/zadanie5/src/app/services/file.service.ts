@@ -3,7 +3,7 @@ import * as FileSaver from 'file-saver';
 
 @Injectable()
 export class FileService {
-  readFile(file, onLoadCallback) {
+  readFile(file, onLoadCallback): void {
     const reader = new FileReader();
     reader.onload = onLoadCallback;
     reader.readAsText(file);
@@ -17,7 +17,7 @@ export class FileService {
     FileSaver.saveAs(blob, fileName);
   }
 
-  transformToXhtml(xsltFile, xmlFile, fileName) {
+  transformToXhtml(xsltFile, xmlFile, fileName): void {
     const xsltProcessor = new XSLTProcessor();
     xsltProcessor.importStylesheet(xsltFile);
     const result = xsltProcessor.transformToDocument(xmlFile);

@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {Autor} from "../../XmlModel/Autor";
 import {Ksiazka} from "../../XmlModel/Ksiazka";
+import {Ksiazki} from "../../XmlModel/Ksiazki";
 
 @Component({
   selector: 'app-books-add',
@@ -10,19 +11,19 @@ import {Ksiazka} from "../../XmlModel/Ksiazka";
 export class BooksAddComponent {
 
   @Input() content;
-  id: string;
-  dostepna: string;
-  tytul: string;
-  jezyk: string;
-  dzial: string;
-  rokWydania: number;
-  cena: number;
+  @Input() departments;
+  private id: string;
+  private dostepna: string;
+  private tytul: string;
+  private jezyk: string;
+  private dzial: string;
+  private rokWydania: number;
+  private cena: number;
 
-  autorzy;
-  liczbaAutorow: number;
-  options = true;
+  private autorzy;
+  private options = true;
 
-  add() {
+  add(): void {
     if(this.options) {
       this.autorzy = 'Praca zbiorowa';
     }
@@ -30,7 +31,7 @@ export class BooksAddComponent {
     this.content['ksiazki'].push(book);
   }
 
-  authorCountChange(event) {
+  authorCountChange(event): void {
     this.autorzy = [];
     for(let i = 0; i < event.target.value; i++) {
       this.autorzy.push(new Autor('', ''));

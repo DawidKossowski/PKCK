@@ -3,6 +3,7 @@ import { NgxXml2jsonService } from 'ngx-xml2json';
 import { Księgarnia } from './XmlModel/Ksiegarnia';
 import { SerializeService } from './services/serialize.service';
 import { FileService } from './services/file.service';
+import {LibraryService} from "./services/library.service";
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ export class AppComponent {
 
   constructor(private ngxXml2jsonService: NgxXml2jsonService,
               private serializeService: SerializeService,
-              private fileService: FileService) {}
+              private fileService: FileService,
+              private libraryService: LibraryService) {}
 
   public loadXmlFile(event) {
     this.fileService.readFile(event.target.files[0], (e: any) => {
@@ -24,7 +26,8 @@ export class AppComponent {
       this.xmlFile = xmlDoc;
 
       const obj = this.ngxXml2jsonService.xmlToJson(xmlDoc);
-      this.ksiegarnia = new Księgarnia(obj);
+      this.libraryService.setLibrary(new Księgarnia(obj));
+      this.ksiegarnia = this.libraryService.getLibrary();
       localStorage.setItem('ksiegarnia', JSON.stringify(this.ksiegarnia));
     });
   }
@@ -32,9 +35,5 @@ export class AppComponent {
   public downloadActual() {
     const downloadFile = this.serializeService.objectToXml(this.ksiegarnia);
     this.fileService.downloadFile(downloadFile, 'text/xml', 'export.xml');
-  }
-
-  testing(e) {
-    console.log(e);
   }
 }
