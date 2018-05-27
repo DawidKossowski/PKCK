@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Tworcy} from "../XmlModel/Tworcy";
-import {LibraryService} from "../services/library.service";
+import {Tworcy} from "../../XmlModel/Tworcy";
+import {LibraryService} from "../../services/library.service";
 
 @Component({
   selector: 'app-creator-content',

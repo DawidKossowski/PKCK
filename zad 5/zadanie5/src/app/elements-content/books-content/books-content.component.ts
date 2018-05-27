@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Ksiazki} from "../XmlModel/Ksiazki";
-import {LibraryService} from "../services/library.service";
+import {Ksiazki} from "../../XmlModel/Ksiazki";
+import {LibraryService} from "../../services/library.service";
 
 @Component({
   selector: 'app-books-content',

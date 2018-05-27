@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {DefinicjaDzialu} from "../../XmlModel/DefinicjaDzialu";
+import {DefinicjaDzialu} from "../../../XmlModel/DefinicjaDzialu";
 
 @Component({
   selector: 'app-department-add',

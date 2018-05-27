@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {LibraryService} from '../services/library.service';
-import {Dzialy} from '../XmlModel/Dzialy';
+import {Dzialy} from "../../XmlModel/Dzialy";
+import {LibraryService} from "../../services/library.service";
+
 
 @Component({
   selector: 'app-department-content',

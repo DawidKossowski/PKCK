@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
-import {Tworca} from "../../XmlModel/Tworca";
-import {Kontakt} from "../../XmlModel/Kontakt";
+import {Tworca} from "../../../XmlModel/Tworca";
+import {Kontakt} from "../../../XmlModel/Kontakt";
 
 @Component({
   selector: 'app-creator-add',

@@ -5,3 +5,11 @@
 .hidden {
   display: none;
 }
+
+.content {
+  margin: 5px 0;
+}
+
+.hideContent ~ * {
+  display: none;
+}

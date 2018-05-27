@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
-import {Autor} from "../../XmlModel/Autor";
-import {Ksiazka} from "../../XmlModel/Ksiazka";
-import {Ksiazki} from "../../XmlModel/Ksiazki";
+import {Autor} from "../../../XmlModel/Autor";
+import {Ksiazka} from "../../../XmlModel/Ksiazka";
+import {Ksiazki} from "../../../XmlModel/Ksiazki";
 
 @Component({
   selector: 'app-books-add',

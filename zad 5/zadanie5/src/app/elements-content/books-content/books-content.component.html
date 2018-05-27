@@ -1,15 +1,14 @@
 <div class="row position-relative">
   <div class="ml-10 col-md-6">
-    <div>
-      <button class="btn btn-link p-0 pb-1">+</button>
-      <p class="d-inline-block p-1">{{content['type']}}</p>
-      <button class="btn btn-outline-primary" (click)="add()">Dodaj</button>
-    </div>
+    <app-toggle [name]="content['type']">
+      <button class="btn btn-outline-primary mt-1 mb-1" (click)="add()">Dodaj</button>
+    </app-toggle>
     <ng-container *ngFor="let c of content.ksiazki; let idx=index">
       <div *ngIf="c" class="ml-10 mb-2">
-        <button class="btn btn-link p-0 pb-1">+</button>
-        <p class="d-inline-block p-1">{{c.type}}</p>
-        <button class="btn btn-outline-danger" (click)="delete(idx)">Usuń</button>
+        <app-toggle [name]="c['type']">
+          <button class="btn btn-outline-danger mt-1 mb-2" (click)="delete(idx)">Usuń</button>
+        </app-toggle>
+
         <div class="row ml-10">
           <div class="col-md-2">
             <label>@{{c['id']['type']}}</label>
@@ -45,41 +44,37 @@
         </div>
 
         <div class="ml-10" *ngIf="c['autorzy']['autorzy']['imię']">
-          <button class="btn btn-link p-0 pb-1">+</button>
-          <p class="d-inline-block p-1 m-0">autorzy</p>
+          <app-toggle [name]="'autorzy'"></app-toggle>
+
           <div class="ml-10">
-            <button class="btn btn-link p-0 pb-1">+</button>
-            <p class="d-inline-block p-1 m-0">autor</p>
-            <div>
-              <div class="row ml-10">
-                <div class="col-md-2">
-                  <label>imię</label>
-                </div>
-                <div class="col-md-10">
-                  <input type="text" [(ngModel)]="c['autorzy']['autorzy']['imię']"/>
-                </div>
+            <app-toggle [name]="'autor'"></app-toggle>
+
+            <div class="row ml-10">
+              <div class="col-md-2">
+                <label>imię</label>
               </div>
-              <div class="row ml-10">
-                <div class="col-md-2">
-                  <label>nazwisko</label>
-                </div>
-                <div class="col-md-10">
-                  <input type="text" [(ngModel)]="c['autorzy']['autorzy']['nazwisko']"/>
-                </div>
+              <div class="col-md-10">
+                <input type="text" [(ngModel)]="c['autorzy']['autorzy']['imię']"/>
               </div>
             </div>
+            <div class="row ml-10">
+              <div class="col-md-2">
+                <label>nazwisko</label>
+              </div>
+              <div class="col-md-10">
+                <input type="text" [(ngModel)]="c['autorzy']['autorzy']['nazwisko']"/>
+              </div>
+            </div>
+
           </div>
-        </div>
 
-        <div class="ml-10" *ngIf="c['autorzy']['autorzy'][0] && !(c['autorzy']['autorzy'] == 'Praca zbiorowa')">
-          <button class="btn btn-link p-0 pb-1">+</button>
-          <p class="d-inline-block p-1 m-0">autorzy</p>
+          <div class="ml-10" *ngIf="c['autorzy']['autorzy'][0] && !(c['autorzy']['autorzy'] == 'Praca zbiorowa')">
+            <app-toggle [name]="'autorzy'"></app-toggle>
 
-          <div *ngFor="let autor of c['autorzy']['autorzy']">
-            <div class="ml-10">
-              <button class="btn btn-link p-0 pb-1">+</button>
-              <p class="d-inline-block p-1 m-0">autor</p>
-              <div>
+            <div *ngFor="let autor of c['autorzy']['autorzy']">
+              <div class="ml-10">
+                <app-toggle [name]="'autor'"></app-toggle>
+
                 <div class="row ml-10">
                   <div class="col-md-2">
                     <label>imię</label>
@@ -96,6 +91,7 @@
                     <input type="text" [(ngModel)]="autor['nazwisko']"/>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

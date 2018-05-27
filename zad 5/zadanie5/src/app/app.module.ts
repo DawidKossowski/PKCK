@@ -7,13 +7,14 @@ import { FileService } from './services/file.service';
 import { TransformComponent } from './transform/transform.component';
 import {FormsModule} from "@angular/forms";
 import { ContentComponent } from './content/content.component';
-import { DepartmentContentComponent } from './department-content/department-content.component';
-import { CreatorContentComponent } from './creator-content/creator-content.component';
-import { BooksContentComponent } from './books-content/books-content.component';
-import { DepartmentAddComponent } from './department-content/department-add/department-add.component';
-import { CreatorAddComponent } from './creator-content/creator-add/creator-add.component';
-import { BooksAddComponent } from './books-content/books-add/books-add.component';
+import { DepartmentContentComponent } from './elements-content/department-content/department-content.component';
+import { CreatorContentComponent } from './elements-content/creator-content/creator-content.component';
+import { BooksContentComponent } from './elements-content/books-content/books-content.component';
+import { DepartmentAddComponent } from './elements-content/department-content/department-add/department-add.component';
+import { CreatorAddComponent } from './elements-content/creator-content/creator-add/creator-add.component';
+import { BooksAddComponent } from './elements-content/books-content/books-add/books-add.component';
 import {LibraryService} from "./services/library.service";
+import { ToggleComponent } from './elements-content/toggle/toggle.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {LibraryService} from "./services/library.service";
     BooksContentComponent,
     DepartmentAddComponent,
     CreatorAddComponent,
-    BooksAddComponent
+    BooksAddComponent,
+    ToggleComponent
   ],
   imports: [
     BrowserModule,
