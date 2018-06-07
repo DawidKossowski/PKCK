@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="content-type"
+            content="application/xhtml+xml; charset=utf-8"/>
+      <title>Ksiegarnia</title>
+      <style type="text/css">
+                    body {
+                        margin: 0 50px;
+                        padding: 20px 0;
+                        background: white;
+                        font-family: sans-serif, monospace;
+                        overflow-x: hidden;
+                    }
+                    
+                    h3 {
+                        margin-top: 50px;
+                    }
+                    
+                    p {
+                        margin: 5px 0;
+                    }
+                    
+                    .main-list {
+                        padding: 0;
+                        list-style-position: inside
+                    }
+                    
+                    .main-list li {
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                    }
+                    
+                    .main-list li a {
+                        text-transform: uppercase;
+                    }
+                    
+                    table {
+                        width: 100%;
+                        text-align: center;
+                    }
+                    
+                    table th {
+                        background-color: lightskyblue;
+                    }
+                    
+                    table tr:nth-child(2n) {
+                        background-color: #eee;
+                    }
+                    
+                    table th:first-letter {
+                        text-transform: uppercase;
+                    }
+                    
+                    table td, table th{
+                        padding: 10px 0;
+                    }
+                    
+                    .table-container {
+                        display: flex;
+                    }
+                    
+                    .table-small {
+                        width: 30%;
+                        margin-right: 40px;
+                    }
+                </style>
+   </head>
+   <body>
+      <h1>Księgarnia</h1>
+      <h2>W pliku znajdują się następujące sekcje:</h2>
+      <ol class="main-list">
+         <li>
+            <a href="#d18e3">twórcy</a>
+         </li>
+         <li>
+            <a href="#d18e54">książki</a>
+         </li>
+         <li>
+            <a href="#d18e689">działy</a>
+         </li>
+         <li>
+            <a href="#d18e747">statystyki</a>
+         </li>
+      </ol>
+      <h3 id="d18e3">Twórcy dokumentu</h3>
+      <ul>
+         <li>
+            <p style="font-weight: bold">Szymon Cytrowski</p>
+            <p>Semestr: VI</p>
+            <p>Nr indeksu: 203863</p>
+            <p>Kontakt:</p>
+            <ul>
+               <li>203863@edu.p.lodz.pl</li>
+               <li>321-321-321</li>
+            </ul>
+         </li>
+         <li>
+            <p style="font-weight: bold">Dawid Kossowski</p>
+            <p>Semestr: VI</p>
+            <p>Nr indeksu: 203908</p>
+            <p>Kontakt:</p>
+            <ul>
+               <li>203908@edu.p.lodz.pl</li>
+               <li>123-123-123</li>
+            </ul>
+         </li>
+      </ul>
+
+      <h3 id="d18e54">Lista książek</h3>
+      <table>
+         <caption>Wszystkie ceny wyrażone są w PLN.</caption>
+         <thead>
+            <tr>
+               <th>tytuł</th>
+               <th>autorzy</th>
+               <th>język</th>
+               <th>dział</th>
+               <th>rok-wydania</th>
+               <th>cena</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Pan Tadeusz</td>
+               <td>
+                  <span style="display: block;">Adam Mickiewicz</span>
+               </td>
+               <td>Polski</td>
+               <td>Literatura</td>
+               <td>1996</td>
+               <td>54.99</td>
+            </tr>
+            <tr>
+               <td>Ogniem i mieczem</td>
+               <td>
+                  <span style="display: block;">Henryk Sienkiewicz</span>
+               </td>
+               <td>Polski</td>
+               <td>Literatura</td>
+               <td>1945</td>
+               <td>70.00</td>
+            </tr>
+            <tr>
+               <td>Algebra</td>
+               <td>
+                  <span style="display: block;">Andrzej Białynicki</span>
+               </td>
+               <td>Polski</td>
+               <td>Literatura</td>
+               <td>2017</td>
+               <td>43.60</td>
+            </tr>
+            <tr>
+               <td>Bracia Karmazow</td>
+               <td>
+                  <span style="display: block;">Fiodor Dostojewski</span>
+               </td>
+               <td>Niemiecki</td>
+               <td>Literatura</td>
+               <td>2014</td>
+               <td>84.00</td>
+            </tr>
+            <tr>
+               <td>Pierwszy śnieg</td>
+               <td>
+                  <span style="display: block;">Iwona Zimnicka</span>
+               </td>
+               <td>Polski</td>
+               <td>Literatura</td>
+               <td>2017</td>
+               <td>35.00</td>
+            </tr>
+            <tr>
+               <td>Wprowadzenie do algorytmów</td>
+               <td>
+                  <span style="display: block;">Thomas Cormen</span>
+               </td>
+               <td>Polski</td>
+               <td>Naukowe</td>
+               <td>2017</td>
+               <td>90.00</td>
+            </tr>
+            <tr>
+               <td>Statystyka</td>
+               <td>
+                  <span style="display: block;">Mieczysław Sobczyk</span>
+               </td>
+               <td>Polski</td>
+               <td>Naukowe</td>
+               <td>2011</td>
+               <td>35.00</td>
+            </tr>
+            <tr>
+               <td>Muminki - księga I</td>
+               <td>
+                  <span style="display: block;">Tove Jansson</span>
+               </td>
+               <td>Polski</td>
+               <td>Podręczniki</td>
+               <td>2017</td>
+               <td>36.00</td>
+            </tr>
+            <tr>
+               <td>Storyfun for Starters 1</td>
+               <td>
+                  <span style="display: block;">Karen Saxby</span>
+               </td>
+               <td>Angielski</td>
+               <td>Podręczniki</td>
+               <td>2017</td>
+               <td>54.45</td>
+            </tr>
+            <tr>
+               <td>Angielski na obcasach</td>
+               <td>
+                  <span style="display: block;">Gabriela Oberda</span>
+                  <span style="display: block;">Julian Zamorski</span>
+               </td>
+               <td>Polski</td>
+               <td>Podręczniki</td>
+               <td>2016</td>
+               <td>24.94</td>
+            </tr>
+            <tr>
+               <td>Słownik idiomów angielskich</td>
+               <td>
+                  <span style="display: block;">Anna Strzeszewska</span>
+               </td>
+               <td>Polski</td>
+               <td>Podręczniki</td>
+               <td>2017</td>
+               <td>9.90</td>
+            </tr>
+            <tr>
+               <td>Nowe przygody Bolka i Lolka</td>
+               <td>
+                  <span style="display: block;">Maria Bosowicz</span>
+               </td>
+               <td>Polski</td>
+               <td>Dziecięce</td>
+               <td>2013</td>
+               <td>42.00</td>
+            </tr>
+            <tr>
+               <td>Strażak Sam</td>
+               <td>
+                  <span>Praca zbiorowa</span>
+               </td>
+               <td>Polski</td>
+               <td>Dziecięce</td>
+               <td>2011</td>
+               <td>7.00</td>
+            </tr>
+            <tr>
+               <td>Hello Kitty i przyjaciele</td>
+               <td>
+                  <span>Praca zbiorowa</span>
+               </td>
+               <td>Angielski</td>
+               <td>Dziecięce</td>
+               <td>2014</td>
+               <td>12.00</td>
+            </tr>
+            <tr>
+               <td>Ordynacja Podatkowa NIP 2018</td>
+               <td>
+                  <span>Praca zbiorowa</span>
+               </td>
+               <td>Polski</td>
+               <td>Czasopisma</td>
+               <td>2018</td>
+               <td>27.18</td>
+            </tr>
+            <tr>
+               <td>Wieś i rolnictwo</td>
+               <td>
+                  <span style="display: block;">Mateusz Kranicki</span>
+                  <span style="display: block;">Janusz Wiechno</span>
+               </td>
+               <td>Polski</td>
+               <td>Czasopisma</td>
+               <td>2017</td>
+               <td>15.00</td>
+            </tr>
+            <tr>
+               <td>Studia Genealogiczne</td>
+               <td>
+                  <span style="display: block;">Piotr Maroński</span>
+               </td>
+               <td>Polski</td>
+               <td>Czasopisma</td>
+               <td>2018</td>
+               <td>126.00</td>
+            </tr>
+            <tr>
+               <td>Kajko i Kokosz</td>
+               <td>
+                  <span>Praca zbiorowa</span>
+               </td>
+               <td>Niemiecki</td>
+               <td>Komiksy</td>
+               <td>2013</td>
+               <td>294.00</td>
+            </tr>
+            <tr>
+               <td>Avengers i X-Men</td>
+               <td>
+                  <span style="display: block;">Adam Kubert</span>
+                  <span style="display: block;">Francis Yu</span>
+               </td>
+               <td>Angielski</td>
+               <td>Komiksy</td>
+               <td>2017</td>
+               <td>30.00</td>
+            </tr>
+            <tr>
+               <td>Daredevil</td>
+               <td>
+                  <span style="display: block;">Alex Maleev</span>
+                  <span style="display: block;">David Mack</span>
+                  <span style="display: block;">Terry Dodson</span>
+               </td>
+               <td>Angielski</td>
+               <td>Komiksy</td>
+               <td>2014</td>
+               <td>77.19</td>
+            </tr>
+         </tbody>
+      </table>
+
+      <h3 id="d18e689">Działy</h3>
+      <table class="table-small">
+         <caption>Tabela działów z przypisanym im ID</caption>
+         <thead>
+            <tr>
+               <th>id</th>
+               <th>nazwa</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>D1</td>
+               <td>Literatura</td>
+            </tr>
+            <tr>
+               <td>D2</td>
+               <td>Naukowe</td>
+            </tr>
+            <tr>
+               <td>D3</td>
+               <td>Podręczniki</td>
+            </tr>
+            <tr>
+               <td>D4</td>
+               <td>Dziecięce</td>
+            </tr>
+            <tr>
+               <td>D5</td>
+               <td>Czasopisma</td>
+            </tr>
+            <tr>
+               <td>D6</td>
+               <td>Komiksy</td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="d18e747">Statystyki</h3>
+      <h4>Statystyki zostały wygenerowane na podstawie powyższych wyników.</h4>
+      <p>
+         <span>Liczba wszystkich książek w bibliotece: </span>
+         <span style="color: red;">20</span>
+      </p>
+      <p style="margin-bottom: 20px;">
+         <span>Liczba książek z bieżącego roku: </span>
+         <span style="color: red;">2</span>
+      </p>
+      <div class="table-container">
+         <table class="table-small">
+            <caption>Liczby książek w poszczególnych językach</caption>
+            <thead>
+               <tr>
+                  <th>Język</th>
+                  <th>Ilość</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>polski</td>
+                  <td>14</td>
+               </tr>
+               <tr>
+                  <td>angielski</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <td>niemiecki</td>
+                  <td>2</td>
+               </tr>
+            </tbody>
+         </table>
+         <table class="table-small">
+            <caption>Liczby książek z poszczególnych działów</caption>
+            <thead>
+               <tr>
+                  <th>Język</th>
+                  <th>Ilość</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>literatura</td>
+                  <td>5</td>
+               </tr>
+               <tr>
+                  <td>naukowe</td>
+                  <td>2</td>
+               </tr>
+               <tr>
+                  <td>podręczniki</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <td>dziecięce</td>
+                  <td>3</td>
+               </tr>
+               <tr>
+                  <td>czasopisma</td>
+                  <td>3</td>
+               </tr>
+               <tr>
+                  <td>komiksy</td>
+                  <td>3</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>
