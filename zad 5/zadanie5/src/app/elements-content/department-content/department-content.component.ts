@@ -1,6 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Dzialy} from "../../XmlModel/Dzialy";
-import {LibraryService} from "../../services/library.service";
+import { Component, OnInit } from '@angular/core';
+import { Dzialy } from '../../XmlModel/Dzialy';
+import { LibraryService } from '../../services/library.service';
 
 
 @Component({
@@ -10,8 +10,8 @@ import {LibraryService} from "../../services/library.service";
 })
 export class DepartmentContentComponent implements OnInit {
 
-  private content: Dzialy;
-  private showAdd = false;
+  public content: Dzialy;
+  public showAdd = false;
 
   constructor(private libraryService: LibraryService) {}
 

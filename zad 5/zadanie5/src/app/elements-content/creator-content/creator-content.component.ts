@@ -1,6 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Tworcy} from "../../XmlModel/Tworcy";
-import {LibraryService} from "../../services/library.service";
+import { Component, Input, OnInit } from '@angular/core';
+import { Tworcy } from '../../XmlModel/Tworcy';
+import { LibraryService } from '../../services/library.service';
 
 @Component({
   selector: 'app-creator-content',
@@ -9,7 +9,7 @@ import {LibraryService} from "../../services/library.service";
 })
 export class CreatorContentComponent implements OnInit {
 
-  private content: Tworcy;
+  public content: Tworcy;
   private showAdd = false;
 
   constructor(private libraryService: LibraryService) {}

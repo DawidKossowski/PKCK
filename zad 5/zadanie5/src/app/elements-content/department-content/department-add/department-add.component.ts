@@ -9,14 +9,21 @@ import {DefinicjaDzialu} from "../../../XmlModel/DefinicjaDzialu";
 export class DepartmentAddComponent implements OnInit {
 
   @Input() content;
-  id: string;
-  nazwa: string;
+  private lastId: number;
+  public id: string;
+  public nazwa: string;
 
   ngOnInit() {
+    this.lastId = this.content['definicjaDzialu'].length;
+    this.generateId();
   }
 
-  add() {
-    console.log(this.id, this.nazwa);
+  generateId(): void {
+    this.id = 'D' + ++this.lastId;
+  }
+
+  add(): void {
     this.content['definicjaDzialu'].push(new DefinicjaDzialu(this.id, this.nazwa));
+    this.generateId();
   }
 }

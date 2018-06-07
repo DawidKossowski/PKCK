@@ -121,6 +121,9 @@
     
     <xsl:template name="stat">
         <ilość-książek>
+            <średnia-cena>
+                <xsl:value-of select="(sum(//książka/cena[@waluta='PLN']) + sum(//książka/cena[@waluta='USD'])*3.5 + sum(//książka/cena[@waluta='EUR'])*4.5) div (count(//książka))" />
+            </średnia-cena>
             <wszystkie>
                 <xsl:value-of select="count(//książka)"/>
             </wszystkie>

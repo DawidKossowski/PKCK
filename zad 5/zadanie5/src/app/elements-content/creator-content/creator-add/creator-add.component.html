@@ -1,6 +1,6 @@
-<form class="sticky-top" (submit)="add()">
+<form class="sticky-top" #addForm="ngForm" (submit)="add(addForm)">
   <label for="idTworcy">@idTwórcy</label>
-  <input type="text" class="form-control" [(ngModel)]="idTworcy" name="idTworyc" id="idTworcy" />
+  <input type="text" class="form-control" disabled [(ngModel)]="idTworcy" name="idTworyc" id="idTworcy" />
   <label for="name">imię</label>
   <input type="text" class="form-control" [(ngModel)]="imie" name="name" id="name" />
   <label for="surname">nazwisko</label>

@@ -9,7 +9,7 @@ import {LibraryService} from "../../services/library.service";
 })
 export class BooksContentComponent implements OnInit {
 
-  private content: Ksiazki;
+  public content: Ksiazki;
   private departments;
   private showAdd = false;
 
@@ -17,6 +17,7 @@ export class BooksContentComponent implements OnInit {
 
   ngOnInit() {
     this.content = this.libraryService.getBooks();
+    console.log(this.content.ksiazki[0].autorzy.autorzy);
     this.departments = this.libraryService.getDepartmentsValue();
   }
 

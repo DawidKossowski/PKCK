@@ -13,7 +13,7 @@
             <label>@{{c['id']['type']}}</label>
           </div>
           <div class="col-md-10">
-            <input type="text" [(ngModel)]="c['id']['value']"  />
+            <input type="text" disabled [(ngModel)]="c['id']['value']"  />
           </div>
         </div>
         <div class="row ml-10">
@@ -71,6 +71,6 @@
     </ng-container>
   </div>
   <div class="col-md-6">
-    <app-creator-add [content]="content" class="" [ngClass]="{'hidden': !showAdd}"></app-creator-add>
+    <app-creator-add [content]="content" [ngClass]="{'hidden': !showAdd}"></app-creator-add>
   </div>
 </div>
